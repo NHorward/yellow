@@ -62,6 +62,7 @@
 
 .icon-notification:before {
   content: "\e909";
+  font-size: 35px;
 }
 
 .icon-pressure:before {
