@@ -23,7 +23,7 @@
 
 .icon-leaf:before {
   content: "\e900";
-  font-size: 70px;
+  font-size: 55px;
 }
 
 .icon-block:before {
@@ -32,12 +32,12 @@
 
 .icon-dash:before {
   content: "\e902";
-  font-size: 70px;
+  font-size: 55px;
 }
 
 .icon-history:before {
   content: "\e903";
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .icon-house:before {
@@ -70,12 +70,12 @@
 
 .icon-profile:before {
   content: "\e90b";
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .icon-rooms:before {
   content: "\e90c";
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .icon-thermometer:before {
