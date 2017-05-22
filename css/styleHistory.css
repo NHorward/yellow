@@ -9,50 +9,47 @@ Groen: #25db91
 Felblauw: #00ccff
 Rood: #dc485e */
 
-
-
-
-
 @media screen and (max-width: 1024px) {
-    body {
-      font-family: 'Yellow', 'lato', sans-serif;
-      font-size: 20px;
-      font-weight: 400;
-    }
-    /* navigatie */
-    header {
-      background-color: #444a6a;
-      margin: 0 auto 0 auto;
-      height: 100%;
-      width: 7.66%;
-      float: left;
-    }
-    nav ul img {
-      width: 100%;
-      height: 80px;
-      margin-bottom: 15px;
-      margin-top: 20px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: 300;
-    }
-    nav ul li {
-      text-align: center;
-    }
-    .selected {
-      color: #f47936;
-    }
-    .navLine {
-      width: 80%;
-      margin-top: 9px;
-      margin-bottom: 24px;
-    }
-    .navIcons {
-      padding-bottom: 10px;
-    }
-  }
+ body {
+  font-family: 'Yellow', 'lato', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+ }
+ /* navigatie */
+ header {
+  background-color: #444a6a;
+  margin: 0 auto 0 auto;
+  height: 100%;
+  width: 7.66%;
+  float: left;
+ }
+ nav ul img {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+ }
+ nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+ }
+ nav ul li {
+  text-align: center;
+ }
+ .selected {
+  color: #f47936;
+ }
+ .navLine {
+  width: 80%;
+  margin-top: 9px;
+  margin-bottom: 24px;
+ }
+ .navIcons {
+  padding-bottom: 10px;
+ }
+}
+
 
 /* HISTORY */
 
@@ -63,13 +60,14 @@ body {
 #graphsImage {
  max-width: 58%;
  float: left;
-padding-left: 15px;
+ padding-left: 15px;
  padding-right: 15px;
  margin: 15px;
  margin-top: 0px;
  background-color: #444a6a;
  display: inline;
 }
+
 
 /*
 h1 {
@@ -87,7 +85,6 @@ h1 {
 
 #calendar {
  max-width: 100%;
- 
  display: inline;
  float: right;
 }
@@ -99,7 +96,7 @@ section#calendar {
  margin-top: 0px;
 }
 
-#parameterButton{
+#parameterButton {
  max-width: 25%;
  display: inline-block;
  background-color: #fa7b35;
@@ -109,7 +106,7 @@ section#calendar {
  padding-top: 40px;
  padding-bottom: 40px;
  margin: 15px;
-margin-left: 0px;
+ margin-left: 0px;
  margin-top: 0px;
  float: right;
  font-size: 30px;
@@ -119,4 +116,48 @@ margin-left: 0px;
 a {
  text-decoration: none;
  color: white;
+}
+
+#optionMenu {
+ float: left;
+ height: 45px;
+ width: 89%;
+ margin: 0px 15px 15px 15px;
+ background-color: #444a6a;
+ position: relative;
+}
+
+h2 {
+ font-weight: 700;
+ color: white;
+ margin-left: 15px;
+ margin-top: 10px;
+ padding-top: 15px;
+ display: inline;
+}
+
+#optionArrow {
+ float: right;
+ font-size: 30pt;
+ display: inline;
+ margin: 15px;
+ margin-top: 5px;
+}
+
+.dropdownContent {
+display: none;
+ position: absolute;
+ z-index: 1;
+  width: 100%;
+}
+
+.dropdownContent a {
+ display: block;
+ background-color: #444a6a;
+ padding: 20px;
+
+}
+
+.show {
+ display: block;
 }
