@@ -38,4 +38,61 @@
       padding-bottom: 10px;
     }
     /* outside Jorik */
+    #outside a {
+      text-decoration: none;
+      color: white;
+    }
+    #outside .column {
+      width: 28.69%;
+      height: 85%;
+      float: left;
+      margin-left: 1.46%
+    }
+    #outside .temperature {
+      height: 36%;
+      background-color: #444a6a;
+      margin-bottom: 15px;
+    }
+    #outside h2 {
+      text-align: center;
+      padding-top: 5px;
+      font-size: 22px;
+    }
+    #outside .co2 {
+      height: 31.5%;
+      background-color: #444a6a;
+      margin-bottom: 15px;
+    }
+    #outside .illuminance {
+      height: 28%;
+      background-color: #444a6a;
+    }
+    #outside .humidity {
+      height: 29%;
+      background-color: #444a6a;
+      margin-bottom: 15px;
+    }
+    #outside .noise {
+      height: 26%;
+      background-color: #444a6a;
+      margin-bottom: 15px;
+    }
+    #outside .pressure {
+      height: 40.5%;
+      background-color: #444a6a;
+    }
+    #outside .wind {
+      height: 35%;
+      background-color: #444a6a;
+      margin-bottom: 15px;
+    }
+    #outside .solar {
+      height: 31%;
+      background-color: #444a6a;
+      margin-bottom: 15px;
+    }
+    #outside .voc {
+      height: 29.5%;
+      background-color: #444a6a;
+    }
   }
