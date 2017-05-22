@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Yellow';
+  src:  url('fonts/Yellow.eot?er7cdp');
+  src:  url('fonts/Yellow.eot?er7cdp#iefix') format('embedded-opentype'),
+    url('fonts/Yellow.ttf?er7cdp') format('truetype'),
+    url('fonts/Yellow.woff?er7cdp') format('woff'),
+    url('fonts/Yellow.svg?er7cdp#Yellow') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Yellow' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-leaf:before {
+  content: "\e900";
+}
+.icon-block:before {
+  content: "\e901";
+}
+.icon-dash:before {
+  content: "\e902";
+}
+.icon-history:before {
+  content: "\e903";
+}
+.icon-house:before {
+  content: "\e904";
+}
+.icon-ear:before {
+  content: "\e905";
+}
+.icon-arrow:before {
+  content: "\e906";
+}
+.icon-lamp:before {
+  content: "\e907";
+}
+.icon-emptyblock:before {
+  content: "\e908";
+}
+.icon-notification:before {
+  content: "\e909";
+}
+.icon-pressure:before {
+  content: "\e90a";
+}
+.icon-profile:before {
+  content: "\e90b";
+}
+.icon-rooms:before {
+  content: "\e90c";
+}
+.icon-thermometer:before {
+  content: "\e90d";
+}
+.icon-water:before {
+  content: "\e90e";
+}
+.icon-cloud:before {
+  content: "\e910";
+}
