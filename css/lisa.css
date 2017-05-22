@@ -1,0 +1,59 @@
+/* Kleuren Huisstijl 
+Donkerblauw: #192b4c
+Oranje: #fa7b35
+Lichtblauw: #444a6a
+Donkergrijs: #c8cacc
+Lichtgrijs: #e3e4e5
+
+Groen: #25db91
+Felblauw: #00ccff
+Rood: #dc485e */
+
+/* rooms */
+#rooms #livingroom, #kitchen, #diningroom, #bathroom, #bedroom1, #bedroom2, #attic, #addroom {
+  background-color: #444a6a;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 25px;
+  width: 21.14%;
+  height: 329px;
+  margin: 0 0 1.46% 1.46%;
+  float: left;
+  text-align: center;
+}
+#rooms img{
+  padding-top: 30%;
+}
+
+#rooms h2 {
+  padding-top: 5%;
+}
+
+/* temperature */
+#temperature .orange {
+  background-color: #fa7b35;
+  color: #FFF;
+  font-weight: 300;
+  height: 85.03%;
+  width: 50.29%;
+  margin: 0 0 1.46% 1.46%;
+  float: left;
+  text-align: center;
+}
+
+#temperature .setpoints {
+  background-color: #444a6a;
+  color: #FFF;
+  width: 37.25%;
+  height: 32.94%;
+  margin: 0 0 1.46% 1.46%;
+}
+
+#temperature .idealsituation {
+  background-color: #444a6a;
+  color: #FFF;
+  width: 37.25%;
+  height: 24.25%;
+  margin: 0 0 1.46% 1.46%;
+}
+
