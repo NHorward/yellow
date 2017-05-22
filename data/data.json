@@ -17,7 +17,7 @@
   "RHBedroom": "32,3", 
   "CO2Bedroom": "432", 
   "WindowBedroom": "0",
-  "IlluminanceLiving": "400", 
+  "IlluminanceLiving": "400" 
  },
  {
   "time": "11:00", 
@@ -36,7 +36,7 @@
   "RHBedroom": "32,2", 
   "CO2Bedroom": "425", 
   "WindowBedroom": "0",
-  "IlluminanceLiving": "410", 
+  "IlluminanceLiving": "410" 
  },
  {
   "time": "12:00", 
@@ -55,7 +55,7 @@
   "RHBedroom": "32,4", 
   "CO2Bedroom": "424", 
   "WindowBedroom": "0",
-  "IlluminanceLiving": "400", 
+  "IlluminanceLiving": "400" 
  },
  {
   "time": "13:00", 
@@ -74,7 +74,7 @@
   "RHBedroom": "32,5", 
   "CO2Bedroom": "419", 
   "WindowBedroom": "0",
-  "IlluminanceLiving": "410", 
+  "IlluminanceLiving": "410"
  },
  {
   "time": "14:00", 
@@ -93,7 +93,7 @@
   "RHBedroom": "32,6", 
   "CO2Bedroom": "419", 
   "WindowBedroom": "0",
-  "IlluminanceLiving": "400", 
+  "IlluminanceLiving": "400"
  },
  {
   "time": "15:00", 
@@ -112,7 +112,7 @@
   "RHBedroom": "32,7", 
   "CO2Bedroom": "416", 
   "WindowBedroom": "0",
-  "IlluminanceLiving": "410", 
+  "IlluminanceLiving": "410" 
  }
 ] 
 }
