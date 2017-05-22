@@ -38,17 +38,4 @@
       padding-bottom: 10px;
     }
     /* outside Jorik */
-    #outside .title {
-      float: left;
-      height: 45px;
-      width: 83.15%;
-      margin: 20px 15px 15px 15px;
-      background-color: #444a6a;
-    }
-    #outside .title h1 {
-      font-weight: 700;
-      color: white;
-      margin-left: 15px;
-      margin-top: 10px;
-    }
   }
