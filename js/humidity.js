@@ -33,7 +33,7 @@ function showTime() {
 // Functie die de laatste humidity waarde uit het JSON bestand ophaalt en laat zien
 function showHumidity() {
  var humContainer = document.getElementById("value");
- var humHeader = document.createElement("h2");
+ var humHeader = document.createElement("h3");
  var currentHum = document.createTextNode(sensorData[lastValue].RHLiving + "%");
  humHeader.appendChild(currentHum);
  humContainer.appendChild(humHeader);
