@@ -1,155 +1,200 @@
-  @media screen and (max-width: 1024px) {
-  	body {
-  		font-family: 'Yellow', 'lato', sans-serif;
-  		font-size: 20px;
-  		font-weight: 400;
-  	}
-  	/* navigatie */
-  	header {
-  		background-color: #444a6a;
-  		margin: 0 auto 0 auto;
-  		height: 100%;
-  		width: 7.66%;
-  		float: left;
-  	}
-  	nav ul img {
-  		width: 100%;
-  		height: 80px;
-  		margin-bottom: 15px;
-  		margin-top: 20px;
-  	}
-  	nav ul li a {
-  		text-decoration: none;
-  		color: white;
-  		font-weight: 300;
-  	}
-  	nav ul li {
-  		text-align: center;
-  	}
-  	.selected {
-  		color: #f47936;
-  	}
-  	.navLine {
-  		width: 80%;
-  		margin-top: 9px;
-  		margin-bottom: 24px;
-  	}
-  	.navIcons {
-  		padding-bottom: 10px;
-  	}
-  	/* MENU Ennio */
-  	#dash .parameters {
-  		width: 55.08%;
-  		height: 85%;
-  		float: left;
-  		margin: 0px 0px 0px 15px;
-  	}
-  	#dash .dropdown {
-  		float: left;
-  		height: 45px;
-  		width: 100%;
-  		background-color: #444a6a;
-  	}
-  	#dash .dropdown h2 {
-  		font-weight: 400;
-  		color: white;
-  		margin-left: 15px;
-  		margin-top: 10px;
-  		float: left;
-  	}
-  	#dash .icon-arrow {
-  		text-decoration: none;
-  		color: white;
-  		float: right;
-  		font-size: 35px;
-  		margin-right: 10px;
-  		margin-top: 5px;
-  	}
-  	/*Colom*/
-  	#dash .column a {
-  		text-decoration: none;
-  		color: white;
-  	}
-  	#dash .column {
-  		width: 48.54%;
-  		height: 91%;
-  		float: left;
-  		margin-top: 15px;
-  		margin-right: 15px;
-  	}
-  	#dash .column:last-of-type {
-  		margin-right: 0;
-  	}
-  	#dash .temperature {
-  		height: 210px;
-  		background-color: #444a6a;
-  		margin-bottom: 15px;
-  	}
-  	#dash .column h2 {
-  		text-align: center;
-  		padding-top: 5px;
-  		font-size: 22px;
-  	}
-  	#dash .co2 {
-  		height: 163px;
-  		background-color: #444a6a;
-  		margin-bottom: 15px;
-  	}
-  	#dash .illuminance {
-  		height: 190px;
-  		background-color: #444a6a;
-  	}
-  	#dash .humidity {
-  		height: 163px;
-  		background-color: #444a6a;
-  		margin-bottom: 15px;
-  	}
-  	#dash .noise {
-  		height: 190px;
-  		background-color: #444a6a;
-  		margin-bottom: 15px;
-  	}
-  	#dash .pressure {
-  		height: 210px;
-  		background-color: #444a6a;
-  		margin-bottom: 15px;
-  	}
-  	#dash .house {
-  		width: 32.47%;
-  		height: 59.5295%;
-  		float: left;
-  		margin: 0px 0px 0px 15px;
-  	}
-  	#dash .houseTitle {
-  		float: left;
-  		height: 45px;
-  		width: 100%;
-  		background-color: #444a6a;
-  	}
-  	#dash .houseTitle h2 {
-  		font-weight: 400;
-  		color: white;
-  		margin-left: 15px;
-  		margin-top: 10px;
-  		float: left;
-  	}
-  	#dash .outside {
-  		width: 32.47%;
-  		height: 25.4566%;
-  		float: left;
-  		margin: 0px 0px 0px 15px;
-  	}
-  	#dash .outsideTitle {
-  		float: left;
-  		height: 45px;
-  		width: 100%;
-  		background-color: #444a6a;
-  	}
-  	#dash .outsideTitle h2 {
-  		font-weight: 400;
-  		color: white;
-  		margin-left: 15px;
-  		margin-top: 10px;
-  		float: left;
-  	}
-  }
+@media screen and (max-width: 1024px) {
+	body {
+		font-family: 'Yellow', 'lato', sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+	}
+	/* navigatie */
+	header {
+		background-color: #444a6a;
+		margin: 0 auto 0 auto;
+		height: 100%;
+		width: 7.66%;
+		float: left;
+	}
+	nav ul img {
+		width: 100%;
+		height: 80px;
+		margin-bottom: 15px;
+		margin-top: 20px;
+	}
+	nav ul li a {
+		text-decoration: none;
+		color: white;
+		font-weight: 300;
+	}
+	nav ul li {
+		text-align: center;
+	}
+	.selected {
+		color: #f47936;
+	}
+	.navLine {
+		width: 80%;
+		margin-top: 9px;
+		margin-bottom: 24px;
+	}
+	.navIcons {
+		padding-bottom: 10px;
+	}
+	/* DASHBOARD Ennio */
+	#dash .parameters {
+		width: 55.08%;
+		height: 85%;
+		float: left;
+		margin: 0px 0px 0px 15px;
+	}
+	#dash .dropdown {
+		float: left;
+		height: 45px;
+		width: 100%;
+		background-color: #444a6a;
+	}
+	#dash .dropdown h2 {
+		font-weight: 400;
+		color: white;
+		margin-left: 15px;
+		margin-top: 10px;
+		float: left;
+	}
+	#dash .icon-arrow {
+		text-decoration: none;
+		color: white;
+		float: right;
+		font-size: 35px;
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+	/*Colom*/
+	#dash .column a {
+		text-decoration: none;
+		color: white;
+	}
+	#dash .column {
+		width: 48.54%;
+		height: 91%;
+		float: left;
+		margin-top: 15px;
+		margin-right: 15px;
+	}
+	#dash .column:last-of-type {
+		margin-right: 0;
+	}
+	#dash .temperature {
+		height: 210px;
+		background-color: #444a6a;
+		margin-bottom: 15px;
+	}
+	#dash .column h2 {
+		text-align: center;
+		padding-top: 5px;
+		font-size: 22px;
+	}
+	#dash .co2 {
+		height: 163px;
+		background-color: #444a6a;
+		margin-bottom: 15px;
+	}
+	#dash .illuminance {
+		height: 190px;
+		background-color: #444a6a;
+	}
+	#dash .humidity {
+		height: 163px;
+		background-color: #444a6a;
+		margin-bottom: 15px;
+	}
+	#dash .noise {
+		height: 190px;
+		background-color: #444a6a;
+		margin-bottom: 15px;
+	}
+	#dash .pressure {
+		height: 210px;
+		background-color: #444a6a;
+		margin-bottom: 15px;
+	}
+	#dash .house {
+		width: 32.47%;
+		height: 59.5295%;
+		float: left;
+		margin: 0px 0px 0px 15px;
+	}
+	#dash .houseTitle {
+		float: left;
+		height: 45px;
+		width: 100%;
+		background-color: #444a6a;
+	}
+	#dash .houseTitle h2 {
+		font-weight: 400;
+		color: white;
+		margin-left: 15px;
+		margin-top: 10px;
+		float: left;
+	}
+	#dash .outside {
+		width: 32.47%;
+		height: 25.4566%;
+		float: left;
+		margin: 0px 0px 0px 15px;
+	}
+	#dash .outsideTitle {
+		float: left;
+		height: 45px;
+		width: 100%;
+		background-color: #444a6a;
+	}
+	#dash .outsideTitle h2 {
+		font-weight: 400;
+		color: white;
+		margin-left: 15px;
+		margin-top: 10px;
+		float: left;
+	}
+	/* PROFILE Ennio */
+	#dash .myHouse {
+		height: 290px;
+		background-color: #444a6a;
+		margin-bottom: 15px;
+	}
+	#dash .myHouse h2 {
+		font-size: 25px;
+		font-weight: 400;
+	}
+	#dash .addAndCompare {
+		height: 137.5px;
+		background-color: #444a6a;
+		margin-bottom: 15px;
+	}
+	#dash .addAndCompare h2 {
+		text-align: center;
+		padding-top: 30px;
+		font-size: 26px;
+		line-height: 35px;
+	}
+	#dash .icon-house {
+		font-size: 150px;
+		text-align: center;
+		font-weight: bold;
+	}
+	#dash .myHouse p {
+		font-size: 23px;
+		text-align: center;
+		font-weight: 300;
+	}
+	#dash button {
+		background-color: #ee732a;
+		color: white;
+		width: 59.8958%;
+		height: 13.21%;
+		border: none;
+		display: block;
+		margin: auto;
+		margin-top: 10%;
+	}
+	#dash h3 {
+		font-weight: 300;
+		font-size: 20px;
+	}
+}
