@@ -1,0 +1,50 @@
+/* HUMIDITY detail */
+#humidity .orange {
+  background-color: #fa7b35;
+  color: #FFF;
+  font-weight: 300;
+  height: 85.03%;
+  width: 50.29%;
+  margin: 0 0 1.46% 1.46%;
+  float: left;
+  text-align: center;
+}
+
+#humidity .setpoints {
+  background-color: #444a6a;
+  color: #FFF;
+  width: 37.25%;
+  height: 32.94%;
+  margin: 0 0 1.46% 1.46%;
+  display: inline-block;
+}
+
+#humidity .idealsituation {
+  background-color: #444a6a;
+  color: #FFF;
+  width: 37.25%;
+  height: 24.25%;
+  margin: 0 0 1.46% 1.46%;
+  display: inline-block;
+}
+
+#humidity .outside {
+  background-color: #444a6a;
+  color: #FFF;
+  width: 37.25%;
+  height: 23.70%;
+  margin: 0 0 1.46% 1.46%;
+  display: inline-block;
+}
+
+#humidity .outside img{
+  padding: 5% 10% 0 5%;
+}
+
+#humidity #idealvalue {
+  text-align: center;
+}
+
+#humidity #outsidetemperature, #outsidehumidiy, #windspeed {
+
+}
