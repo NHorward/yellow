@@ -57,16 +57,13 @@
     </div>
 
     <div class="orange">
-      <section class="hour">
-        <h3>UUR</h3></section>
-      <section class="value">
-        <h3>°C</h3></section>
+      <section class="hour" id="hour">
+        </section>
+      <section class="value" id="value">
+        </section>
       <section class="room">
         <h3>Kitchen temperature</h3></section>
-      <section class="oldvalue1"></section>
-      <section class="oldvalue2"></section>
-      <section class="oldvalue3"></section>
-      <section class="oldvalue4"></section>
+      <section id="tempHistory"></section>
     </div>
 
     <div class="setpoints">
@@ -92,18 +89,12 @@
     <div class="outside">
       <h2>Outside</h2>
       <img src="../img/weer.png" width=30%>
-      <section class="outsidetemperature">
-        <h3>Temperature</h3></section>
-
-      <section class="outsidehumidity">
-        <h3>Humidity</h3></section>
-
-      <section class="windspeed">
-        <h3>Wind</h3></section>
+      <section id="outside"></section>
     </div>
   </main>
 
-  <script src="../js/index.js"></script>
+ <script src="../js/jquery-3.2.0.js"></script>
+  <script src="../js/temperature.js"></script>
 </body>
 
 </html>
