@@ -167,7 +167,21 @@
 		color: white;
 		margin-left: 15px;
 		margin-top: 10px;
+		/*		float: left;*/
+	}
+	#dash .outside img {
+		padding: 45px 0 0 15px;
 		float: left;
+	}
+	#dash .outside section:first-of-type {
+		padding-top: 20px;
+	}
+	#dash .outside h3 {
+		display: block;
+		padding-bottom: 5%;
+		margin-left: 130px;
+		margin-top: 5px;
+		font-weight: 400;
 	}
 	/* PROFILE Ennio */
 	#dash .myHouse {
