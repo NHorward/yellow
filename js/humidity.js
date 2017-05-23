@@ -1,6 +1,7 @@
 // Globale variabelen
 var sensorData;
 var lastValue;
+
 // Functie die JSON data ophaalt 
 // Array van data wordt toegevoegd aan var sensorData
 $(document).ready(function () {
@@ -20,6 +21,7 @@ $(document).ready(function () {
  });
 });
 
+// Functie die de laatste tijdswaarde uit het JSON bestand ophaalt en laat zien
 function showTime() {
  var timeContainer = document.getElementById("hour");
  var timeHeader = document.createElement("h3");
@@ -28,14 +30,16 @@ function showTime() {
  timeContainer.appendChild(timeHeader);
 }
 
+// Functie die de laatste humidity waarde uit het JSON bestand ophaalt en laat zien
 function showHumidity() {
  var humContainer = document.getElementById("value");
- var humHeader = document.createElement("h1");
+ var humHeader = document.createElement("h2");
  var currentHum = document.createTextNode(sensorData[lastValue].RHLiving + "%");
  humHeader.appendChild(currentHum);
  humContainer.appendChild(humHeader);
 }
 
+// Functie die alle humidity waarden uit het JSON bestand haalt en in een tabel weergeeft
 function showHumidityHistory() {
  var humHistoryContainer = document.getElementById("humidityHistory");
  var historyTable = document.createElement("table");
@@ -54,45 +58,39 @@ function showHumidityHistory() {
  humHistoryContainer.appendChild(historyTable);
 }
 
+// Functie die de laatste outside data ophaalt en weergeeft in een tabel
 function showOutsideData() {
  var outsideContainer = document.getElementById("outside");
  var outsideTable = document.createElement("table");
-
- for (i=0; i < 3; i++){
+ for (i = 0; i < 3; i++) {
   var outsideRow = document.createElement("tr");
   var title = document.createElement("td");
   var titleText;
-  if (i == 0){
+  if (i == 0) {
    titleText = document.createTextNode("Temperature");
   }
-  else if (i == 1){
+  else if (i == 1) {
    titleText = document.createTextNode("Humidity");
   }
   else {
    titleText = document.createTextNode("Windspeed");
   }
-  
-  
-  title.appendChild(titleText); 
-  
+  title.appendChild(titleText);
   var value = document.createElement("td");
   var valueData;
-  
-   if (i == 0){
+  if (i == 0) {
    valueData = document.createTextNode(sensorData[lastValue].Tenvironment + "°C");
   }
-  else if (i == 1){
-    valueData = document.createTextNode(sensorData[lastValue].RHEnvironment + "%");
+  else if (i == 1) {
+   valueData = document.createTextNode(sensorData[lastValue].RHEnvironment + "%");
   }
   else {
    valueData = document.createTextNode(sensorData[lastValue].EnvironmentWS + "m/s");
   }
-  value.appendChild(valueData); 
-  
+  value.appendChild(valueData);
   outsideRow.appendChild(title);
   outsideRow.appendChild(value);
   outsideTable.appendChild(outsideRow);
-
-}
+ }
  outsideContainer.appendChild(outsideTable);
 }
