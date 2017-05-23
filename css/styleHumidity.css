@@ -62,10 +62,9 @@ Rood: #dc485e */
 
 
 /* Toggle Button */ 
-/* https://www.w3schools.com/howto/howto_css_switch.asp*/ 
+/* Geraadpleegde bron: W3Schools, How to create a toggle switch.  https://www.w3schools.com/howto/howto_css_switch.asp Datum van raadpleging: 23 mei 2017*/ 
 
 .switch {
-
  position: relative;
  display: inline-block;
  width: 60px;
