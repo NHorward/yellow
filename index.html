@@ -2,111 +2,96 @@
 <html lang="en">
 
 <head>
-	<title>Integration Mobile</title>
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="CSS/reset.css">
-	<link rel="stylesheet" href="fonts/font.css">
-	<link rel="stylesheet" href="CSS/style.css">
-	<link rel="stylesheet" href="css/styleEnnio.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
+ <title>Integration Mobile</title>
+ <meta charset="UTF-8">
+ <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+ <link rel="stylesheet" href="CSS/reset.css">
+ <link rel="stylesheet" href="fonts/font.css">
+ <link rel="stylesheet" href="CSS/style.css">
+ <link rel="stylesheet" href="css/styleEnnio.css">
+ <link rel="stylesheet" href="css/styleIndex.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
 
 <body>
-	<header>
-		<nav>
-			<ul>
-				<a href="index.html"><img src="img/logo.png"></a>
-				<li class="navIcons">
-					<a href="index.html" class="icon-dash selected"></a>
-				</li>
-				<li> <a href="index.html" class="selected">Home</a> </li>
-				<li>
-					<hr class="navLine"> </li>
-				<li class="navIcons">
-					<a href="html/outside.html" class="icon-leaf"></a>
-				</li>
-				<li><a href="html/outside.html">Outside</a></li>
-				<li>
-					<hr class="navLine"> </li>
-				<li class="navIcons">
-					<a href="html/rooms.html" class="icon-rooms"></a>
-				</li>
-				<li><a href="html/rooms.html">Rooms</a></li>
-				<li>
-					<hr class="navLine"> </li>
-				<li class="navIcons">
-					<a href="html/history.html" class="icon-history"></a>
-				</li>
-				<li><a href="html/history.html">History</a></li>
-				<li>
-					<hr class="navLine"> </li>
-				<li class="navIcons">
-					<a href="html/profile.html" class="icon-profile"></a>
-				</li>
-				<li><a href="html/profile.html">Profile</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main id="dash">
-		<div class="title">
-			<h1>HOME</h1>
-		</div>
-		<div class="notificationIcon">
-			<a href="#" class="icon-notification"></a>
-		</div>
-		<section class="parameters">
-
-			<div>
-				<select id="optionMenu">
-					<option value="house"> Home </option>
-					<option value="diningroom"> Dining room </option>
-					<option value="livingroom"> Living room </option>
-					<option value="kitchen"> Kitchen</option>
-					<option value="bedroomEast"> Bedroom East </option>
-					<option value="bedroomWest"> Bedroom West </option>
-					<option value="bathroom"> Bathroom</option>
-					<option value="attic"> Attic </option>
-				</select>
-				<a class="icon-arrow"></a>
-			</div>
-
-			<section class="column">
-				<div class="temperature"> <a href="html/temperature.html"><h2>Temperature</h2> </a></div>
-				<div class="co2"> <a href="html/co2.html"><h2>CO2</h2></a> </div>
-				<div class="illuminance"><a href="illuminance.html"><h2>Illuminance</h2></a></div>
-			</section>
-
-			<section class="column">
-				<div class="humidity"> <a href="html/humidity.html"><h2>Humidity</h2> </a></div>
-				<div class="noise"> <a href="html/noise.html"><h2>Noise</h2></a> </div>
-				<div class="pressure"><a href="html/pressure.html"><h2>Pressure</h2></a></div>
-			</section>
-		</section>
-
-		<section class="house">
-			<div class="houseTitle">
-				<h2>House</h2>
-			</div>
-		</section>
-
-		<section class="outside">
-			<div class="outsideTitle">
-				<h2>Outside</h2>
-				<img src="img/weer.png" width=30%>
-				<section class="outsidetemperature">
-					<h3>Temperature</h3></section>
-
-				<section class="outsidehumidity">
-					<h3>Humidity</h3></section>
-
-				<section class="windspeed">
-					<h3>Wind</h3></section>
-			</div>
-		</section>
-
-	</main>
-
-	<script src="js/index.js"></script>
+ <header>
+  <nav>
+   <ul>
+    <a href="index.html"><img src="img/logo.png"></a>
+    <li class="navIcons">
+     <a href="index.html" class="icon-dash selected"></a>
+    </li>
+    <li> <a href="index.html" class="selected">Home</a> </li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="html/outside.html" class="icon-leaf"></a>
+    </li>
+    <li><a href="html/outside.html">Outside</a></li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="html/rooms.html" class="icon-rooms"></a>
+    </li>
+    <li><a href="html/rooms.html">Rooms</a></li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="html/history.html" class="icon-history"></a>
+    </li>
+    <li><a href="html/history.html">History</a></li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="html/profile.html" class="icon-profile"></a>
+    </li>
+    <li><a href="html/profile.html">Profile</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main id="dash">
+  <div class="title">
+   <h1>HOME</h1> </div>
+  <div class="notificationIcon">
+   <a href="#" class="icon-notification"></a>
+  </div>
+  <section class="parameters">
+   <div>
+    <select id="optionMenu">
+     <option value="house"> Home </option>
+     <option value="diningroom"> Dining room </option>
+     <option value="livingroom"> Living room </option>
+     <option value="kitchen"> Kitchen</option>
+     <option value="bedroomEast"> Bedroom East </option>
+     <option value="bedroomWest"> Bedroom West </option>
+     <option value="bathroom"> Bathroom</option>
+     <option value="attic"> Attic </option>
+    </select>
+    <a class="icon-arrow"></a>
+   </div>
+   <section class="column">
+    <div class="temperature"> <a href="html/temperature.html"><h2>Temperature</h2> </a></div>
+    <div class="co2"> <a href="html/co2.html"><h2>CO2</h2></a> </div>
+    <div class="illuminance"><a href="illuminance.html"><h2>Illuminance</h2></a></div>
+   </section>
+   <section class="column">
+    <div class="humidity"> <a href="html/humidity.html"><h2>Humidity</h2> </a></div>
+    <div class="noise"> <a href="html/noise.html"><h2>Noise</h2></a> </div>
+    <div class="pressure"><a href="html/pressure.html"><h2>Pressure</h2></a></div>
+   </section>
+  </section>
+  <section class="house">
+   <div class="houseTitle">
+    <h2>House</h2> </div>
+  </section>
+  <section class="outside">
+   <div class="outsideTitle">
+    <h2>Outside</h2> <img src="img/weer.png" width=30%>
+    <section class="outsidetemperature" id="outside"> </section>
+   </div>
+  </section>
+ </main>
+ <script src="js/jquery-3.2.0.js"></script>
+ <script src="js/index.js"></script>
 </body>
 
 </html>
