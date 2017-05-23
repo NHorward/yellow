@@ -32,7 +32,7 @@ function showTime(){
 function showHumidity(){
  var humContainer = document.getElementById("value");
  var humHeader = document.createElement("h2");
- var currentHum = document.createTextNode(sensorData[lastValue].RHLiving);
+ var currentHum = document.createTextNode(sensorData[lastValue].RHLiving + "%");
  humHeader.appendChild(currentHum);
  humContainer.appendChild(humHeader);
 }
@@ -46,7 +46,7 @@ function showHumidityHistory(){
  var historyTime = document.createElement("td");
   var time = document.createTextNode(sensorData[i].time);
  var historyHum = document.createElement("td");
- var humidity = document.createTextNode(sensorData[i].RHLiving);
+ var humidity = document.createTextNode(sensorData[i].RHLiving + "%");
  
   historyTime.appendChild(time);
   historyHum.appendChild(humidity);
