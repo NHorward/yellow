@@ -49,58 +49,49 @@
  </header>
  <main id="humidity">
   <div class="title">
+   <a href="../index.html"><img src="../img/back.png" width=2%></a>
    <h1>HUMIDITY</h1></div>
   <div class="notificationIcon">
    <a href="" class="icon-notification"></a>
   </div>
+  
   <div class="orange">
    <section class="hour" id="hour"></section>
-   <section class="value" id="value">
-   </section>
+   <section class="value" id="value"> </section>
    <section id="humidityHistory"></section>
-   
   </div>
+  
   <div class="setpoints">
-   <h2>Setpoints</h2>
-   <section id="settemperature">
-    <h3>Temperature</h3></section>
-   <section id="windowsopen">
-    <h3>Windows open </h3><label class="switch">
+      <h2>Setpoints</h2>
+      <section class="settemperature">
+        <h3>Temperature</h3> </section>
+      <section class="windowsopen">
+        <h3>Windows open<label class="switch">
      <input type="checkbox">
      <div class="slider"></div>
-    </label>
-   
-   </section>
-   <section id="blindsup">
-    <h3>Blinds up</h3> <label class="switch">
+    </label></h3></section>
+      <section class="blindsup">
+        <h3>Blinds up<label class="switch">
      <input type="checkbox">
      <div class="slider"></div>
-    </label></section>
-  </div>
-  <div class="idealsituation">
-   <h3>Ideally it would be...</h3>
-   <section id="idealvalue">
-    <h2>45-65%</h2>
-   </section>
-   <section id="reason">
-    <p> A high amount of humidity can cause fungus growth and condensation. A low amount of relative humidity can cause dry skin and breathing issues. </p>
-   </section>
-  </div>
-  <div class="outside">
-   <h2>Outside</h2> <img src="../img/weer.png" width=30%>
-   <h3>Temperature</h3>
-   <section id="outsidetemperature">
-    <p>&#8451;</p>
-   </section>
-   <h3>Humidity</h3>
-   <section id="outsidehumidity">
-    <p>&#37;</p>
-   </section>
-   <h3>Wind</h3>
-   <section id="windspeed">
-    <p>km&#47;h</p>
-   </section>
-  </div>
+    </label></h3></section>
+    </div>
+ <div class="idealsituation">
+      <h2>Ideally it would be...</h2>
+      <section class="idealvalue">
+        <p>45-65%</p>
+      </section>
+      <section class="reason">
+        <p>A nice amount of humidity is good for you, hurray!</p>
+      </section>
+    </div>
+   <div class="outside">
+      <h2>Outside</h2>
+      <img src="../img/weer.png" width=30%>
+      <section id="outside">
+        </section>
+    </div>
+
  </main>
  <script src="../js/jquery-3.2.0.js"></script>
  <script src="../js/humidity.js"></script>
