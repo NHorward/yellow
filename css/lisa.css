@@ -28,13 +28,22 @@
 }
 
 #temperature h2 {
-  padding: 2% 0 2% 2%;
-  padding-left: 5%;
+  padding: 2%;
+  padding-left: 2%;
   font-size: 23px;
 }
 
 
 /* temperature detail */
+#temperature .title img {
+  margin: 1% 0 0 1%;
+  display:inline-block;
+}
+
+#temperature .title h1{
+  margin: 0 0 0 5%;
+  display: inline-block;
+}
 
 #temperature .orange {
   background-color: #fa7b35;
@@ -87,8 +96,14 @@
 }
 
 #temperature .idealvalue {
-  font-size: 35px;
+  font-size: 50px;
   padding: 2%;
+  font-weight: 300;
+}
+
+#temperature .reason {
+  font-weight: 300;
+  padding: 2% 2%;
 }
 
 #temperature .outside {
