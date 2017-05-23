@@ -95,6 +95,24 @@
       height: 29.5%;
       background-color: #444a6a;
     }
+    #outside div#tempValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 15%;
+      margin-top: 20%;
+    }
+    #outside div#co2Value {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 5%;
+      margin-top: 20%;
+    }
+    #outside div#illumValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 5%;
+      margin-top: 15%;
+    }
     /* login Jorik */
     #login img {
       display: block;
