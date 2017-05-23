@@ -81,12 +81,12 @@
       height: 40.5%;
       background-color: #444a6a;
     }
-    #outside .wind {
+    #outside .windSpeed {
       height: 35%;
       background-color: #444a6a;
       margin-bottom: 15px;
     }
-    #outside .solar {
+    #outside .windDirection {
       height: 31%;
       background-color: #444a6a;
       margin-bottom: 15px;
@@ -104,20 +104,61 @@
     #outside div#co2Value {
       font-size: 60px;
       font-weight: 300;
-      margin-left: 5%;
+      margin-left: 15%;
       margin-top: 20%;
+      display: inline-block;
     }
     #outside div#illumValue {
       font-size: 60px;
       font-weight: 300;
-      margin-left: 5%;
+      margin-left: 15%;
       margin-top: 15%;
+      display: inline-block;
     }
     #outside div#humValue {
       font-size: 60px;
       font-weight: 300;
       margin-left: 15%;
       margin-top: 15%;
+      display: inline-block;
+    }
+    #outside div#noiseValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 15%;
+      margin-top: 14%;
+      display: inline-block;
+    }
+    #outside span{
+      font-size: 28px;
+      font-weight: 300;
+    }
+    #outside div#pressValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 10%;
+      margin-top: 20%;
+      display: inline-block;
+    }
+    #outside div#windSValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 10%;
+      margin-top: 20%;
+      display: inline-block;
+    }
+    #outside div#windDValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 30%;
+      margin-top: 20%;
+    }
+    #outside div#vocValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 10%;
+      margin-top: 20%;
+      display: inline-block;
     }
     /* login Jorik */
     #login img {

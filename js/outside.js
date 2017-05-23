@@ -14,6 +14,10 @@ $(document).ready(function () {
       showCO2();
       showIlluminance();
       showHumidity();
+      showNoise();
+      showPressure();
+      showWindSpeed();
+      showWindDirection();
     }
   });
 });
@@ -28,20 +32,48 @@ function showTemperature() {
 function showCO2() {
   var lastValue = sensorData.length - 1;
   var co2 = document.getElementById("co2Value");
-  var co = document.createTextNode(sensorData[lastValue].CO2Living + "ppm");
+  var co = document.createTextNode(sensorData[lastValue].CO2Living);
+  
   co2.appendChild(co);
 }
 
 function showIlluminance() {
   var lastValue = sensorData.length - 1;
   var illuminance = document.getElementById("illumValue");
-  var illum = document.createTextNode(sensorData[lastValue].IlluminanceLiving + "lux");
+  var illum = document.createTextNode(sensorData[lastValue].IlluminanceLiving );
   illuminance.appendChild(illum);
 }
 
 function showHumidity() {
   var lastValue = sensorData.length - 1;
   var humidity = document.getElementById("humValue");
-  var hum = document.createTextNode(sensorData[lastValue].RHLiving + "%");
+  var hum = document.createTextNode(sensorData[lastValue].RHLiving);
   humidity.appendChild(hum);
+}
+
+function showNoise() {
+  var lastValue = sensorData.length - 1;
+  var noise = document.getElementById("noiseValue");
+  var noi = document.createTextNode(sensorData[lastValue].NoiseLevelLiving);
+  noise.appendChild(noi);
+}
+
+function showPressure() {
+  var lastValue = sensorData.length - 1;
+  var pressure = document.getElementById("pressValue");
+  var press = document.createTextNode(sensorData[lastValue].PressureLiving);
+  pressure.appendChild(press);
+}
+
+function showWindSpeed() {
+  var lastValue = sensorData.length - 1;
+  var wind = document.getElementById("windSValue");
+  var air = document.createTextNode(sensorData[lastValue].EnvironmentWS);
+  wind.appendChild(air);
+}
+function showWindDirection() {
+  var lastValue = sensorData.length - 1;
+  var wind = document.getElementById("windDValue");
+  var air = document.createTextNode(sensorData[lastValue].EnvironmentWD + "°");
+  wind.appendChild(air);
 }
