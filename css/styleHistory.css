@@ -103,18 +103,15 @@ section#calendar {
  color: white;
  padding-left: 42px;
  padding-right: 42px;
- padding-top: 40px;
- padding-bottom: 40px;
+ padding-top: 105px;
+ padding-bottom: 105px;
  margin: 15px;
  margin-left: 0px;
  margin-top: 0px;
  float: right;
  font-size: 30px;
  text-align: center;
-}
-
-a {
- text-decoration: none;
+  text-decoration: none;
  color: white;
 }
 

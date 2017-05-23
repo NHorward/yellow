@@ -38,6 +38,17 @@
 		padding-bottom: 10px;
 	}
 	/* DASHBOARD Ennio */
+	#optionMenu {
+		float: left;
+		height: 45px;
+		width: 100%;
+		margin: 0px 0px 0px 0px;
+		background-color: #444a6a;
+		border-radius: 0;
+		border-color: #444a6a;
+		position: relative;
+		color: white;
+	}
 	#dash .parameters {
 		width: 55.08%;
 		height: 85%;
@@ -64,6 +75,8 @@
 		font-size: 35px;
 		margin-right: 10px;
 		margin-top: 5px;
+		position: absolute;
+		left: 610;
 	}
 	/*Colom*/
 	#dash .column a {
@@ -172,6 +185,14 @@
 		padding-top: 30px;
 		font-size: 26px;
 		line-height: 35px;
+		float: right;
+		margin-right: 40px;
+	}
+	#dash .addAndCompare img {
+		float: left;
+		margin-top: 33px;
+		margin-left: 35px;
+		width: 55px;
 	}
 	#dash .icon-house {
 		font-size: 150px;
@@ -196,5 +217,56 @@
 	#dash h3 {
 		font-weight: 300;
 		font-size: 20px;
+	}
+	#dash .doNotDisturb {
+		width: 32.47%;
+		height: 32.1615%;
+		float: left;
+		margin: 0px 0px 15px 15px;
+		background-color: #444a6a;
+	}
+	#dash .doNotDisturbTitle {
+		/*		float: left;*/
+		height: 45px;
+		width: 100%;
+		background-color: #444a6a;
+	}
+	#dash .doNotDisturbTitle h2 {
+		font-weight: 400;
+		color: white;
+		margin-left: 15px;
+		margin-top: 10px;
+	}
+	#dash .doNotDisturb p {
+		margin-top: 20px;
+		margin-left: 40px;
+		font-weight: 300;
+		font-size: 26px;
+	}
+	#dash .doNotDisturb hr {
+		margin: 40px;
+	}
+	#dash .customizeDash {
+		width: 32.47%;
+		height: 51.145%;
+		float: left;
+		margin: 0px 0px 0px 15px;
+		background-color: #444a6a;
+	}
+	#dash .customizeDashTitle h2 {
+		font-weight: 400;
+		color: white;
+		margin-left: 15px;
+		margin-top: 10px;
+		/*		float: left;*/
+	}
+	#dash .customizeDash input {
+		width: 27px;
+		height: 27px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	#dash .customizeDash input:first-of-type {
+		margin-top: 15px;
 	}
 }
