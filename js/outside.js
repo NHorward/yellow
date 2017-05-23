@@ -13,6 +13,7 @@ $(document).ready(function () {
       showTemperature();
       showCO2();
       showIlluminance();
+      showHumidity();
     }
   });
 });
@@ -36,4 +37,11 @@ function showIlluminance() {
   var illuminance = document.getElementById("illumValue");
   var illum = document.createTextNode(sensorData[lastValue].IlluminanceLiving + "lux");
   illuminance.appendChild(illum);
+}
+
+function showHumidity() {
+  var lastValue = sensorData.length - 1;
+  var humidity = document.getElementById("humValue");
+  var hum = document.createTextNode(sensorData[lastValue].RHLiving + "%");
+  humidity.appendChild(hum);
 }

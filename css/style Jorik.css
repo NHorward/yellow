@@ -113,6 +113,12 @@
       margin-left: 5%;
       margin-top: 15%;
     }
+    #outside div#humValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 15%;
+      margin-top: 15%;
+    }
     /* login Jorik */
     #login img {
       display: block;
