@@ -1,0 +1,12 @@
+{
+  "accounts":[
+   {
+     "username":"ennio",
+     "password":"ennioderooms",
+   },
+    {
+      "username":"Testpersoon2",
+      "password":"test",
+    }
+  ]
+}
