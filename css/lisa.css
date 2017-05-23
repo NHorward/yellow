@@ -29,7 +29,13 @@ Rood: #dc485e */
   padding-top: 5%;
 }
 
-/* temperature */
+#temperature h2 {
+  padding: 2% 0 2% 2%;
+  padding-left: 5%;
+  font-size: 23px;
+}
+
+/* temperature detail */
 #temperature .orange {
   background-color: #fa7b35;
   color: #FFF;
@@ -47,6 +53,7 @@ Rood: #dc485e */
   width: 37.25%;
   height: 32.94%;
   margin: 0 0 1.46% 1.46%;
+  display: inline-block;
 }
 
 #temperature .idealsituation {
@@ -55,5 +62,26 @@ Rood: #dc485e */
   width: 37.25%;
   height: 24.25%;
   margin: 0 0 1.46% 1.46%;
+  display: inline-block;
 }
 
+#temperature .outside {
+  background-color: #444a6a;
+  color: #FFF;
+  width: 37.25%;
+  height: 23.70%;
+  margin: 0 0 1.46% 1.46%;
+  display: inline-block;
+}
+
+#temperature .outside img{
+  padding: 5% 10% 0 5%;
+}
+
+#temperature #idealvalue {
+  text-align: center;
+}
+
+#temperature #outsidetemperature, #outsidehumidiy, #windspeed {
+
+}
