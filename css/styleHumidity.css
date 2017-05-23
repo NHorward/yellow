@@ -12,6 +12,16 @@ Rood: #dc485e */
 /* HUMIDITY detail */
 /* temperature detail */
 
+#humidity .title img {
+  margin: 1% 0 0 1%;
+  display:inline-block;
+}
+
+#humidity .title h1{
+  margin: 0 0 0 5%;
+  display: inline-block;
+}
+
 #humidity .orange {
   background-color: #fa7b35;
   color: #FFF;
@@ -49,7 +59,7 @@ Rood: #dc485e */
 }
 
 #humidity .setpoints h3 {
-  padding: 2% 0 3% 5%;
+  padding: 5% 0 8% 5%;
   font-size: 25px;
 }
 
@@ -63,8 +73,14 @@ Rood: #dc485e */
 }
 
 #humidity .idealvalue {
-  font-size: 35px;
+  font-size: 50px;
   padding: 2%;
+  font-weight: 300;
+}
+
+#humidity .reason {
+  font-weight: 300;
+  padding: 2% 2%;
 }
 
 #humidity .outside {
@@ -77,9 +93,10 @@ Rood: #dc485e */
 }
 
 #humidity .outside img {
-  padding: 5% 10% 0 5%;
+  padding: 5% 0 0 5%;
   float: left;
 }
+
 
 #humidity .idealvalue {
   text-align: center;
@@ -88,9 +105,58 @@ Rood: #dc485e */
 #humidity .outside h3 {
   display: block;
   padding-bottom: 5%;
+ 
 }
 
 
+#humidity #outsidetemperature {
+ float: right;
+}
+
+
+#humidity h2 {
+  padding: 2%;
+  padding-left: 2%;
+  font-size: 23px;
+}
+
+/* OUTSIDE TABEL */
+
+#outside table{
+
+ margin: 2px;
+ margin-top: 2px;
+ float: right;
+ display: inline;
+}
+
+#outside table tr td {
+ padding: 15px;
+}
+
+#outside td {
+ border-bottom: 1px solid white;
+ padding: 20px;
+ font-size: 16pt;
+}
+
+#outside td:first-child{
+ padding-right: 0px;
+text-align: left;
+}
+
+#outside td:last-child{
+ padding-left:0px;
+ text-align: right;
+}
+
+#outside tr:last-child td{
+ border-bottom: 0px;
+}
+
+#outside tr:first-child td{
+ padding-top: 0px;
+}
 
 /* DETAIL TABEL */
 
@@ -127,7 +193,7 @@ tr:last-child td{
 /* Geraadpleegde bron: W3Schools, How to create a toggle switch.  https://www.w3schools.com/howto/howto_css_switch.asp Datum van raadpleging: 23 mei 2017*/ 
 
 .switch {
- float: right;
+float: right;
  position: relative;
  display: inline-block;
  width: 60px;
@@ -140,7 +206,8 @@ tr:last-child td{
 }
 
 .slider {
- 
+ float: right;
+ display: inline-block;
  position: absolute;
  background-color: #e3e4e5;
  cursor: pointer;
@@ -154,6 +221,7 @@ tr:last-child td{
 }
 
 .slider:before{
+ display: inline-block;
  position: absolute;
  content: "";
  height: 26px;
