@@ -2,94 +2,111 @@
 <html lang="en">
 
 <head>
-  <title>Integration Mobile</title>
-  <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="../CSS/reset.css">
-  <link rel="stylesheet" href="../fonts/font.css">
-  <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="../CSS/styleHumidity.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
+ <title>Integration Mobile</title>
+ <meta charset="UTF-8">
+ <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+ <link rel="stylesheet" href="../CSS/reset.css">
+ <link rel="stylesheet" href="../fonts/font.css">
+ <link rel="stylesheet" href="../CSS/style.css">
+ <link rel="stylesheet" href="../CSS/styleHumidity.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <a href="../index.html"><img src="../img/logo.png"></a>
-        <li class="navIcons">
-          <a href="../index.html" class="icon-dash selected"></a>
-        </li>
-        <li> <a href="../index.html" class="selected">Home</a> </li>
-        <li>
-          <hr class="navLine"> </li>
-        <li class="navIcons">
-          <a href="outside.html" class="icon-leaf"></a>
-        </li>
-        <li><a href="outside.html">Outside</a></li>
-        <li>
-          <hr class="navLine"> </li>
-        <li class="navIcons">
-          <a href="rooms.html" class="icon-rooms"></a>
-        </li>
-        <li><a href="rooms.html">Rooms</a></li>
-        <li>
-          <hr class="navLine"> </li>
-        <li class="navIcons">
-          <a href="history.html" class="icon-history"></a>
-        </li>
-        <li><a href="history.html">History</a></li>
-        <li>
-          <hr class="navLine"> </li>
-        <li class="navIcons">
-          <a href="profile.html" class="icon-profile"></a>
-        </li>
-        <li><a href="profile.html">Profile</a></li>
-      </ul>
-    </nav>
-  </header>
-   <main id="humidity">
-    <div class="title">
-      <h1>HUMIDITY</h1></div>
-    <div class="notificationIcon">
-      <a href="" class="icon-notification"></a>
-    </div>
-    
-    <div class="orange">
-      <section id="hour"></section>
-      <section id="value"><h3>CURRENT HUMIDITY</h3></section>
-      <section id="humidityHistory"></section>
-      <section id="oldvalue1"></section>
-      <section id="oldvalue2"></section>
-      <section id="oldvalue3"></section>
-      <section id="oldvalue4"></section>
-    </div>
-    
-    <div class="setpoints">
-      <h2>Setpoints</h2>
-      <section id="settemperature"><h3>Temperature</h3></section>
-      <section id="windowsopen"><h3>Windows open</h3></section>
-      <section id="blindsup"><h3>Blinds up</h3></section>
-    </div>
-    
-    <div class="idealsituation">
-      <h2>Ideally it would be...</h2>
-      <section id="idealvalue"><p>&#8451;</p></section>
-      <section id="reason"><p></p></section>
-    </div>
-    
-    <div class="outside">
-      <h2>Outside</h2>
-      <img src="../img/weer.png" width=30%>
-      <h3>Temperature</h3>
-      <section id="outsidetemperature"><p>&#8451;</p></section>
-      <h3>Humidity</h3>
-      <section id="outsidehumidity"><p>&#37;</p></section>
-      <h3>Wind</h3>
-      <section id="windspeed"><p>km&#47;h</p></section>
-    </div>
-  </main>
-  <script src="../js/jquery-3.2.0.js"></script>
-  <script src="../js/humidity.js"></script>
+ <header>
+  <nav>
+   <ul>
+    <a href="../index.html"><img src="../img/logo.png"></a>
+    <li class="navIcons">
+     <a href="../index.html" class="icon-dash selected"></a>
+    </li>
+    <li> <a href="../index.html" class="selected">Home</a> </li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="outside.html" class="icon-leaf"></a>
+    </li>
+    <li><a href="outside.html">Outside</a></li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="rooms.html" class="icon-rooms"></a>
+    </li>
+    <li><a href="rooms.html">Rooms</a></li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="history.html" class="icon-history"></a>
+    </li>
+    <li><a href="history.html">History</a></li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="profile.html" class="icon-profile"></a>
+    </li>
+    <li><a href="profile.html">Profile</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main id="humidity">
+  <div class="title">
+   <h1>HUMIDITY</h1></div>
+  <div class="notificationIcon">
+   <a href="" class="icon-notification"></a>
+  </div>
+  <div class="orange">
+   <section id="hour"></section>
+   <section id="value">
+    <h3>CURRENT HUMIDITY</h3></section>
+   <section id="humidityHistory"></section>
+   <section id="oldvalue1"></section>
+   <section id="oldvalue2"></section>
+   <section id="oldvalue3"></section>
+   <section id="oldvalue4"></section>
+  </div>
+  <div class="setpoints">
+   <h2>Setpoints</h2>
+   <section id="settemperature">
+    <h3>Temperature</h3></section>
+   <section id="windowsopen">
+    <h3>Windows open</h3>
+    <label class="switch">
+     <input type="checkbox">
+     <div class="slider"></div>
+    </label>
+   </section>
+   <section id="blindsup">
+    <h3>Blinds up</h3> <label class="switch">
+     <input type="checkbox">
+     <div class="slider"></div>
+    </label></section>
+  </div>
+  <div class="idealsituation">
+   <h2>Ideally it would be...</h2>
+   <section id="idealvalue">
+    <p>&#8451;</p>
+   </section>
+   <section id="reason">
+    <p></p>
+   </section>
+  </div>
+  <div class="outside">
+   <h2>Outside</h2> <img src="../img/weer.png" width=30%>
+   <h3>Temperature</h3>
+   <section id="outsidetemperature">
+    <p>&#8451;</p>
+   </section>
+   <h3>Humidity</h3>
+   <section id="outsidehumidity">
+    <p>&#37;</p>
+   </section>
+   <h3>Wind</h3>
+   <section id="windspeed">
+    <p>km&#47;h</p>
+   </section>
+  </div>
+ </main>
+ <script src="../js/jquery-3.2.0.js"></script>
+ <script src="../js/humidity.js"></script>
 </body>
 
 </html>

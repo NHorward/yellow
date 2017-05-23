@@ -1,3 +1,14 @@
+/* Kleuren Huisstijl 
+Donkerblauw: #192b4c
+Oranje: #fa7b35
+Lichtblauw: #444a6a
+Donkergrijs: #c8cacc
+Lichtgrijs: #e3e4e5
+
+Groen: #25db91
+Felblauw: #00ccff
+Rood: #dc485e */
+
 /* HUMIDITY detail */
 #humidity .orange {
   background-color: #fa7b35;
@@ -47,4 +58,54 @@
 
 #humidity #outsidetemperature, #outsidehumidiy, #windspeed {
 
+}
+
+
+/* Toggle Button */ 
+/* https://www.w3schools.com/howto/howto_css_switch.asp*/ 
+
+.switch {
+
+ position: relative;
+ display: inline-block;
+ width: 60px;
+ height: 34px;
+}
+
+.switch input{
+ display: none;
+}
+
+.slider {
+ 
+ position: absolute;
+ background-color: #e3e4e5;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ transition: 0.4s;
+ border-radius: 34px;
+ 
+}
+
+.slider:before{
+ position: absolute;
+ content: "";
+ height: 26px;
+ width: 26px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ transition: 0.4s;
+ border-radius: 50%;
+}
+
+input:checked + .slider{
+ background-color: #fa7b35;
+}
+
+input:checked + .slider:before{
+ transform: translateX(26px);
 }
