@@ -28,17 +28,31 @@ function showTemperature() {
   var temp = document.createTextNode(sensorData[lastValue].Tenvironment + "°C");
   temperature.appendChild(temp);
   
-  if(parseFloat(sensorData[lastValue].Tenvironment) > -5 || parseFloat(sensorData[lastValue].Tenvironment > 30)){
+  if(parseFloat(sensorData[lastValue].Tenvironment) > -5 && parseFloat(sensorData[lastValue].Tenvironment) < 30){
     $('#tempIcon').addClass('icon-thermometer');
+    $('#tempIcon').addClass('goodIcon');
+  }
+  else{
+    $('#tempIcon').addClass('icon-thermometer');
+    $('#tempIcon').addClass('badIcon');
   }
 }
 
 function showCO2() {
   var lastValue = sensorData.length - 1;
   var co2 = document.getElementById("co2Value");
-  var co = document.createTextNode(sensorData[lastValue].CO2Living);
+  var co = document.createTextNode(sensorData[lastValue].CO2Environment);
   
   co2.appendChild(co);
+  
+  if(parseFloat(sensorData[lastValue].CO2Environment) > 300 && parseFloat(sensorData[lastValue].CO2Environment) < 550){
+    $('#CO2Icon').addClass('icon-cloud');
+    $('#CO2Icon').addClass('goodIcon');
+  }
+  else{
+    $('#CO2Icon').addClass('icon-cloud');
+    $('#CO2Icon').addClass('badIcon');
+  }
 }
 
 function showIlluminance() {
@@ -46,13 +60,31 @@ function showIlluminance() {
   var illuminance = document.getElementById("illumValue");
   var illum = document.createTextNode(sensorData[lastValue].IlluminanceLiving );
   illuminance.appendChild(illum);
+  
+  if(parseFloat(sensorData[lastValue].IlluminanceLiving) > 0 && parseFloat(sensorData[lastValue].IlluminanceLiving) < 1000){
+    $('#illumIcon').addClass('icon-lamp');
+    $('#illumIcon').addClass('goodIcon');
+  }
+  else{
+    $('#illumIcon').addClass('icon-lamp');
+    $('#illumIcon').addClass('badIcon');
+  }
 }
 
 function showHumidity() {
   var lastValue = sensorData.length - 1;
   var humidity = document.getElementById("humValue");
-  var hum = document.createTextNode(sensorData[lastValue].RHLiving);
+  var hum = document.createTextNode(sensorData[lastValue].RHEnvironment);
   humidity.appendChild(hum);
+  
+  if(parseFloat(sensorData[lastValue].RHEnvironment) > 40 && parseFloat(sensorData[lastValue].RHEnvironment) < 60){
+    $('#humIcon').addClass('icon-water');
+    $('#humIcon').addClass('goodIcon');
+  }
+  else{
+    $('#humIcon').addClass('icon-water');
+    $('#humIcon').addClass('badIcon');
+  }
 }
 
 function showNoise() {
@@ -60,6 +92,15 @@ function showNoise() {
   var noise = document.getElementById("noiseValue");
   var noi = document.createTextNode(sensorData[lastValue].NoiseLevelLiving);
   noise.appendChild(noi);
+  
+  if(parseFloat(sensorData[lastValue].NoiseLevelLiving) > 0 && parseFloat(sensorData[lastValue].NoiseLevelLiving) < 80){
+    $('#noiseIcon').addClass('icon-ear');
+    $('#noiseIcon').addClass('goodIcon');
+  }
+  else{
+    $('#noiseIcon').addClass('icon-ear');
+    $('#noiseIcon').addClass('badIcon');
+  }
 }
 
 function showPressure() {
@@ -67,6 +108,15 @@ function showPressure() {
   var pressure = document.getElementById("pressValue");
   var press = document.createTextNode(sensorData[lastValue].PressureLiving);
   pressure.appendChild(press);
+  
+  if(parseFloat(sensorData[lastValue].PressureLiving) > 300 && parseFloat(sensorData[lastValue].PressureLiving) < 1400){
+    $('#pressIcon').addClass('icon-pressure');
+    $('#pressIcon').addClass('goodIcon');
+  }
+  else{
+    $('#pressIcon').addClass('icon-pressure');
+    $('#pressIcon').addClass('badIcon');
+  }
 }
 
 function showWindSpeed() {
