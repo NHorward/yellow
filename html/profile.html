@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../css/styleEnnio.css">
   <link rel="stylesheet" href="../css/lisa.css">
+  <link rel="stylesheet" href="../css/styleNotifications.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
 
 <body>
@@ -53,7 +54,8 @@
       <h1>PROFILE</h1>
     </div>
     <div class="notificationIcon">
-      <a href="#" class="icon-notification"></a>
+      <a href="#" class="icon-notification" onclick="showNotifications()"></a>
+      <div id="notificationContainer"><div id="notificationContent" class="notificationContent"><h3 class="newnotify"> It's raining, time to close your windows! Hurry! </h3><h3 class="oldnotify"> The rain stopped, you can open your windows again.</h3><h3 class="oldnotify"> It's too warm in the attic, maybe open the window? </h3><h3 class="oldnotify"> It's very cold in the kitchen! Turn on the heating before you become a snowman!</h3><h3 class="oldnotify"> Is there a party in the living room? There is too much noise! </h3><h3 class="oldnotify"> Open the blinds in the dining room, you aren't a vampire, are you? </h3></div></div>
     </div>
     <section class="parameters">
 
@@ -179,7 +181,8 @@
     </section>
 
   </section>
-  <script src="../js/index.js"></script>
+  <script src="../js/jquery-3.2.0.js"></script>
+  <script src="../js/profile.js"></script>
 </body>
 
 </html>
