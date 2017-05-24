@@ -27,6 +27,10 @@ function showTemperature() {
   var temperature = document.getElementById("tempValue");
   var temp = document.createTextNode(sensorData[lastValue].Tenvironment + "°C");
   temperature.appendChild(temp);
+  
+  if(parseFloat(sensorData[lastValue].Tenvironment) > -5 || parseFloat(sensorData[lastValue].Tenvironment > 30)){
+    $('#tempIcon').addClass('icon-thermometer');
+  }
 }
 
 function showCO2() {
