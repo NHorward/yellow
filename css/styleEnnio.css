@@ -131,6 +131,114 @@
 		background-color: #444a6a;
 		margin-bottom: 15px;
 	}
+      #dash .badIcon{
+      color:#da475e;
+    }
+    #dash .goodIcon{
+      color:#57be89;
+    }
+    #dash #tempIcon{
+     font-size: 90px;
+      float: right;
+      margin-top: 50px;
+    }
+    #dash #CO2Icon{
+      font-size: 50px;
+      margin-top: 50px;
+      margin-right: 20px;
+      float: right;
+    }
+    #dash #illumIcon{
+      font-size: 70px;
+      margin-top: 40px;
+      margin-right: 20px;
+      float: right;
+    }
+    #dash #humIcon{
+      font-size: 70px;
+      margin-top: 40px;
+      margin-right: 20px;
+      float: right;
+    }
+    #dash #noiseIcon{
+      font-size: 70px;
+      margin-top: 40px;
+      margin-right: 40px;
+      float: right;
+    }
+    #dash #pressIcon{
+      font-size: 70px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    
+    }
+    #dash div#tempValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 15%;
+      margin-top: 20%;
+      display: inline-block;
+    }
+    #dash div#co2Value {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 5%;
+      margin-top: 10%;
+      display: inline-block;
+    }
+    #dash div#illumValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 15%;
+      margin-top: 15%;
+      display: inline-block;
+    }
+    #dash div#humValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 15%;
+      margin-top: 15%;
+      display: inline-block;
+    }
+    #dash div#noiseValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 15%;
+      margin-top: 14%;
+      display: inline-block;
+    }
+    #dash span{
+      font-size: 28px;
+      font-weight: 300;
+    }
+    #dash div#pressValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 17%;
+      margin-top: 10%;
+      display: inline-block;
+    }
+    #dash div#windSValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 10%;
+      margin-top: 20%;
+      display: inline-block;
+    }
+    #dash div#windDValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 30%;
+      margin-top: 20%;
+    }
+    #dash div#vocValue {
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 10%;
+      margin-top: 20%;
+      display: inline-block;
+    }
 	#dash .house {
 		width: 32.47%;
 		height: 59.5295%;
