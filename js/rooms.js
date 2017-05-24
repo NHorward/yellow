@@ -12,39 +12,38 @@ $(document).ready(function () {
 			console.log(sensorData);
 			changeImageLiving();
 
-			if (livingHasIssues()) {
-				document.getElementById('livingroomImg').src = '../img/roomslecht.png';
-			}
-
+//			if (livingHasIssues()) {
+//				document.getElementById('livingroomImg').src = '../img/roomslecht.png';
+//			}
 			changeImageBedroom();
 		}
 	});
 });
 
-var values = {
-	"TLiving": {
-		"min": 17,
-		"max": 25
-	},
-	"RHLiving": {
-		"min": 45,
-		"max": 65
-	}
-}
-
-function livingHasIssues() {
-
-	var lastValue = sensorData.length - 1;
-
-	for (item in values) {
-		if (
-			parseFloat(sensorData[lastValue][item] < values[item].min) &&
-			parseFloat(sensorData[lastValue][item] > values[item].max)
-		) {
-			return true;
-		}
-	}
-}
+//var values = {
+//	"TLiving": {
+//		"min": 17,
+//		"max": 25
+//	},
+//	"RHLiving": {
+//		"min": 45,
+//		"max": 65
+//	}
+//}
+//
+//function livingHasIssues() {
+//
+//	var lastValue = sensorData.length - 1;
+//
+//	for (item in values) {
+//		if (
+//			parseFloat(sensorData[lastValue][item] < values[item].min) &&
+//			parseFloat(sensorData[lastValue][item] > values[item].max)
+//		) {
+//			return true;
+//		}
+//	}
+//}
 
 function changeImageLiving() {
 	var lastValue = sensorData.length - 1;
