@@ -18,6 +18,14 @@ $(document).ready(function () {
    console.log(sensorData);
    showOutsideData();
    showRooms();
+   showTemperature();
+      showCO2();
+      showIlluminance();
+      showHumidity();
+      showNoise();
+      showPressure();
+      showWindSpeed();
+      showWindDirection();
   }
  });
 });
@@ -83,4 +91,98 @@ function showRooms(){
   var br = document.createElement("br");
   roomsContainer.appendChild(br);
  }
+}
+
+function showTemperature() {
+  var lastValue = sensorData.length - 1;
+  var temperature = document.getElementById("tempValue");
+  var temp = document.createTextNode(sensorData[lastValue].TLiving + "°C");
+  temperature.appendChild(temp);
+  
+  if(parseFloat(sensorData[lastValue].TLiving) > 17 && parseFloat(sensorData[lastValue].TLiving) < 25){
+    $('#tempIcon').addClass('icon-thermometer');
+    $('#tempIcon').addClass('goodIcon');
+  }
+  else{
+    $('#tempIcon').addClass('icon-thermometer');
+    $('#tempIcon').addClass('badIcon');
+  }
+}
+
+function showCO2() {
+  var lastValue = sensorData.length - 1;
+  var co2 = document.getElementById("co2Value");
+  var co = document.createTextNode(sensorData[lastValue].CO2Living);
+  
+  co2.appendChild(co);
+  
+  if(parseFloat(sensorData[lastValue].CO2Living) > 0 && parseFloat(sensorData[lastValue].CO2Living) < 800){
+    $('#CO2Icon').addClass('icon-cloud');
+    $('#CO2Icon').addClass('goodIcon');
+  }
+  else{
+    $('#CO2Icon').addClass('icon-cloud');
+    $('#CO2Icon').addClass('badIcon');
+  }
+}
+
+function showIlluminance() {
+  var lastValue = sensorData.length - 1;
+  var illuminance = document.getElementById("illumValue");
+  var illum = document.createTextNode(sensorData[lastValue].IlluminanceLiving );
+  illuminance.appendChild(illum);
+  
+  if(parseFloat(sensorData[lastValue].IlluminanceLiving) > 0 && parseFloat(sensorData[lastValue].IlluminanceLiving) < 1000){
+    $('#illumIcon').addClass('icon-lamp');
+    $('#illumIcon').addClass('goodIcon');
+  }
+  else{
+    $('#illumIcon').addClass('icon-lamp');
+    $('#illumIcon').addClass('badIcon');
+  }
+}
+function showHumidity() {
+  var lastValue = sensorData.length - 1;
+  var humidity = document.getElementById("humValue");
+  var hum = document.createTextNode(sensorData[lastValue].RHLiving);
+  humidity.appendChild(hum);
+  
+  if(parseFloat(sensorData[lastValue].RHLiving) > 45 && parseFloat(sensorData[lastValue].RHLiving) < 65){
+    $('#humIcon').addClass('icon-water');
+    $('#humIcon').addClass('goodIcon');
+  }
+  else{
+    $('#humIcon').addClass('icon-water');
+    $('#humIcon').addClass('badIcon');
+  }
+}
+function showNoise() {
+  var lastValue = sensorData.length - 1;
+  var noise = document.getElementById("noiseValue");
+  var noi = document.createTextNode(sensorData[lastValue].NoiseLevelLiving);
+  noise.appendChild(noi);
+  
+  if(parseFloat(sensorData[lastValue].NoiseLevelLiving) > 0 && parseFloat(sensorData[lastValue].NoiseLevelLiving) < 60){
+    $('#noiseIcon').addClass('icon-ear');
+    $('#noiseIcon').addClass('goodIcon');
+  }
+  else{
+    $('#noiseIcon').addClass('icon-ear');
+    $('#noiseIcon').addClass('badIcon');
+  }
+}
+function showPressure() {
+  var lastValue = sensorData.length - 1;
+  var pressure = document.getElementById("pressValue");
+  var press = document.createTextNode(sensorData[lastValue].PressureLiving);
+  pressure.appendChild(press);
+  
+  if(parseFloat(sensorData[lastValue].PressureLiving) > 1000 && parseFloat(sensorData[lastValue].PressureLiving) < 2000){
+    $('#pressIcon').addClass('icon-pressure');
+    $('#pressIcon').addClass('goodIcon');
+  }
+  else{
+    $('#pressIcon').addClass('icon-pressure');
+    $('#pressIcon').addClass('badIcon');
+  }
 }
