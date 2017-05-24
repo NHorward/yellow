@@ -1,4 +1,4 @@
-/* rooms */
+/* ROOMS */
 
 #rooms #livingroom,
 #kitchen,
@@ -34,7 +34,8 @@
 }
 
 
-/* temperature detail */
+/* TEMPERATURE */
+/* back button */
 #temperature .title img {
   margin: 1% 0 0 1%;
   display:inline-block;
@@ -45,6 +46,7 @@
   display: inline-block;
 }
 
+/* oranje deel */
 #temperature .orange {
   background-color: #fa7b35;
   color: #FFF;
@@ -72,6 +74,7 @@
   padding-top: 10%;
 }
 
+/* setpoints */
 #temperature .setpoints {
   background-color: #444a6a;
   color: #FFF;
@@ -82,10 +85,21 @@
 }
 
 #temperature .setpoints h3 {
-  padding: 5% 0 8% 5%;
+  padding: 5% 0 5% 5%;
   font-size: 25px;
+  display: inline-block;
 }
 
+#temperature .setpoints input[type=text] {
+  width: 60px;
+  margin-left: 100px;
+}
+
+#temperature .setpoints .switch {
+  margin-left: 78px;
+}
+
+/* ideal situation */
 #temperature .idealsituation {
   background-color: #444a6a;
   color: #FFF;
@@ -106,6 +120,7 @@
   padding: 2% 2%;
 }
 
+/* outside */
 #temperature .outside {
   background-color: #444a6a;
   color: #FFF;
