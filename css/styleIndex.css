@@ -1,3 +1,14 @@
+/* Kleuren Huisstijl 
+Donkerblauw: #192b4c
+Oranje: #fa7b35
+Lichtblauw: #444a6a
+Donkergrijs: #c8cacc
+Lichtgrijs: #e3e4e5
+
+Groen: #25db91
+Felblauw: #00ccff
+Rood: #dc485e */
+
 /* OUTSIDE TABEL */
 
 #outside table{
@@ -36,3 +47,29 @@ text-align: left;
  padding-top: 10px;
 }
 
+/* KAMEROVERZICHT BLOKJES*/
+
+.rooms{
+ font-family: "yellow", "Lato", sans-serif;
+display: inline-block;
+font-size: 33px;
+}
+
+.green {
+ color: #25db91;
+}
+
+.red {
+ color: #dc485e;
+}
+
+div.icon-block{
+ display: inline-block;
+padding-top: 15px;
+}
+
+p.rooms{
+  padding-top: 15px;
+ padding-left: 15px;
+ 
+}
