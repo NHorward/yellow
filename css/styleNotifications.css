@@ -1,3 +1,14 @@
+/* Kleuren Huisstijl 
+Donkerblauw: #192b4c
+Oranje: #fa7b35
+Lichtblauw: #444a6a
+Donkergrijs: #c8cacc
+Lichtgrijs: #e3e4e5
+
+Groen: #25db91
+Felblauw: #00ccff
+Rood: #dc485e */
+
 /* MELDINGEN */
 #notificationContainer{
  position: relative;
@@ -13,12 +24,15 @@ background-color: #444a6a;
  margin-left: -290px;
  width: 335px;
  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ max-height: 670px;
+ overflow: hidden;
 }
 
 .newnotify{
  padding: 20px;
  color: white;
-  background-color: #fa7b35;
+  color: #fa7b35;
+ background-color: #444a6a;
 }
 
 .oldnotify{ 
@@ -44,12 +58,29 @@ background-color: #444a6a;
 }
 
 .hiddenDialog{
- background-color: #fa7b35;
+ background-color:#444a6a;
 text-align: center;
  display: none;
  padding: 20px;
+ padding-top: 0;
+ padding-bottom: 0;
+ padding-left: 50px;
 }
 
 .show{
- display: block;
+ display: inline-block;
+}
+
+.greenDialog {
+ color: #25db91;
+ float: left;
+ padding: 20px;
+ padding-top: 0;
+}
+
+.redDialog {
+ color: #dc485e;
+ float: right;
+ padding: 20px;
+ padding-top: 0;
 }
