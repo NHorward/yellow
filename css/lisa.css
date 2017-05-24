@@ -95,10 +95,6 @@
   margin-left: 100px;
 }
 
-#temperature .setpoints .switch {
-  margin-left: 78px;
-}
-
 /* ideal situation */
 #temperature .idealsituation {
   background-color: #444a6a;
