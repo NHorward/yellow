@@ -1,3 +1,14 @@
+/* Kleuren Huisstijl 
+Donkerblauw: #192b4c
+Oranje: #fa7b35
+Lichtblauw: #444a6a
+Donkergrijs: #c8cacc
+Lichtgrijs: #e3e4e5
+
+Groen: #25db91
+Felblauw: #00ccff
+Rood: #dc485e */
+
 /* MELDINGEN */
 #notificationContainer{
  position: relative;
@@ -10,23 +21,24 @@
  z-index: 1;
 background-color: #444a6a;
  float: left;
- margin-left: -305px;
- width: 350px;
+ margin-left: -290px;
+ width: 335px;
  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ max-height: 670px;
+ overflow: hidden;
 }
 
-h3.newnotify{
+.newnotify{
  padding: 20px;
-  background-color: #fa7b35;
-}
-
-h3.oldnotify{ 
+ color: white;
+  color: #fa7b35;
  background-color: #444a6a;
- padding: 20px;
 }
 
-.show{
- display: block;
+.oldnotify{ 
+ background-color: #444a6a;
+ color: #c8cacc;
+ padding: 20px;
 }
 
 .notificationicon{
@@ -37,3 +49,38 @@ h3.oldnotify{
  background-color: #444a6a;
 }
 
+.notLine{
+
+  width: 80%;
+ margin: 0;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.hiddenDialog{
+ background-color:#444a6a;
+text-align: center;
+ display: none;
+ padding: 20px;
+ padding-top: 0;
+ padding-bottom: 0;
+ padding-left: 50px;
+}
+
+.show{
+ display: inline-block;
+}
+
+.greenDialog {
+ color: #25db91;
+ float: left;
+ padding: 20px;
+ padding-top: 0;
+}
+
+.redDialog {
+ color: #dc485e;
+ float: right;
+ padding: 20px;
+ padding-top: 0;
+}

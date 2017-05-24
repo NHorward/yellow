@@ -1,4 +1,4 @@
-<!DOCTYPE htlm>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../CSS/reset.css">
   <link rel="stylesheet" href="../fonts/font.css">
   <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/styleHumidity.css">
+  <link rel="stylesheet" href="../CSS/detail.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
 
 <body>
@@ -18,7 +20,7 @@
         <li class="navIcons">
           <a href="../index.html" class="icon-dash selected"></a>
         </li>
-        <li> <a href="../ndex.html" class="selected">Home</a> </li>
+        <li> <a href="../index.html" class="selected">Home</a> </li>
         <li>
           <hr class="navLine"> </li>
         <li class="navIcons">
@@ -46,7 +48,61 @@
       </ul>
     </nav>
   </header>
-  <script src="../js/index.js"></script>
+
+  <main id="noise">
+    <div class="title">
+      <a href="../index.html"><img src="../img/back.png" width=2%></a>
+      <h1>NOISE</h1></div>
+    <div class="notificationIcon">
+      <a href="" class="icon-notification"></a>
+    </div>
+
+    <div class="orange">
+      <section class="hour" id="hour">
+      </section>
+      <section class="value" id="value">
+      </section>
+      <section class="room">
+        <h3>Living room noise level</h3></section>
+      <section id="noiseHistory"></section>
+    </div>
+
+    <div class="setpoints">
+      <h2>Setpoints</h2>
+      <section class="settemperature">
+        <h3>Temperature</h3>
+        <input type=text>°C</section>
+      <section class="windowsopen">
+        <h3>Windows open</h3><label class="switch">
+     <input type="checkbox">
+     <div class="slider"></div>
+    </label></section>
+      <section class="blindsup">
+        <h3>Blinds up</h3><label class="switch">
+     <input type="checkbox">
+     <div class="slider"></div>
+    </label></section>
+    </div>
+
+    <div class="idealsituation">
+      <h2>Ideally it would be...</h2>
+      <section class="idealvalue">
+        <p>&lt;50db</p>
+      </section>
+      <section class="reason">
+        <p>At this temperature you're one step closer to the ideal living standards. It's not too hot and not too cold.</p>
+      </section>
+    </div>
+
+    <div class="outside">
+      <h2>Outside</h2>
+      <img src="../img/weer.png" width=30%>
+      <section id="outsidedetail"></section>
+    </div>
+  </main>
+
+  <script src="../js/jquery-3.2.0.js"></script>
+  <script src="../js/noise.js"></script>
 </body>
 
 </html>
