@@ -1,13 +1,15 @@
-<!DOCTYPE htlm>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>Integration Mobile</title>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/reset.css">
   <link rel="stylesheet" href="../fonts/font.css">
   <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/detail.css">
+  <link rel="stylesheet" href="../CSS/styleHumidity.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
 
 <body>
@@ -46,7 +48,56 @@
       </ul>
     </nav>
   </header>
-  <script src="../js/index.js"></script>
+  <main id="co2">
+    <div class="title">
+      <a href="../index.html"><img src="../img/back.png" width=2%></a>
+      <h1>CO2</h1></div>
+    <div class="notificationIcon">
+      <a href="" class="icon-notification"></a>
+    </div>
+
+    <div class="orange">
+      <section class="hour" id="hour"></section>
+      <section class="value" id="value"></section>
+      <section class="room">
+        <h3>Living room CO2 level</h3></section>
+      <section id="co2History"></section>
+    </div>
+
+    <div class="setpoints">
+      <h2>Setpoints</h2>
+      <section class="settemperature">
+        <h3>Temperature</h3><input type=text>°C</section>
+      <section class="windowsopen">
+        <h3>Windows open</h3><label class="switch">
+          <input type="checkbox">
+          <div class="slider"></div>
+        </label></section>
+      <section class="blindsup">
+        <h3>Blinds up</h3><label class="switch">
+          <input type="checkbox">
+          <div class="slider"></div>
+        </label></section>
+    </div>
+    <div class="idealsituation">
+      <h2>Ideally it would be...</h2>
+      <section class="idealvalue">
+        <p>406ppm</p>
+      </section>
+      <section class="reason">
+        <p>By not having too much co2 in the room, there's more space for healthy molecules!</p>
+      </section>
+    </div>
+    <div class="outside">
+      <h2>Outside</h2>
+      <img src="../img/weer.png" width=30%>
+      <section id="outsidedetail">
+      </section>
+    </div>
+    
+  </main>
+  <script src="../js/jquery-3.2.0.js"></script>
+  <script src="../js/co2.js"></script>
 </body>
 
 </html>
