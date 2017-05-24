@@ -1,0 +1,205 @@
+/* DETAIL PAGINA'S */
+/* back button */
+#temperature #humidity,
+.title img {
+  margin: 1% 0 0 1%;
+  display: inline-block;
+}
+
+#temperature #humidity,
+.title h1 {
+  margin: 0 0 0 5%;
+  display: inline-block;
+}
+
+/* oranje deel */
+#temperature #humidity,
+.orange {
+  background-color: #fa7b35;
+  color: #FFF;
+  font-weight: 300;
+  height: 85.03%;
+  width: 50.29%;
+  margin: 0 0 1.46% 1.46%;
+  float: left;
+}
+
+#temperature #humidity,
+.orange .hour {
+  padding: 2% 0 0 2%;
+  font-size: 25px;
+}
+
+#temperature #humidity,
+.orange .room {
+  text-align: center;
+  font-size: 27px;
+  padding-top: 2%;
+}
+
+#temperature #humidity,
+.orange .value {
+  font-size: 120px;
+  text-align: center;
+  padding-top: 10%;
+}
+
+#temperature #humidity,
+table {
+  margin: 45px;
+  margin-top: 70px;
+}
+
+#temperature #humidity,
+table tr td {
+  padding: 15px;
+}
+
+#temperature #humidity,
+td {
+  border-bottom: 1px solid white;
+  padding: 20px;
+  font-size: 20pt;
+}
+
+#temperature #humidity,
+td:first-child {
+  padding-right: 120px;
+  text-align: left;
+}
+
+#temperature #humidity,
+td:last-child {
+  padding-left: 120px;
+  text-align: right;
+}
+
+#temperature #humidity,
+tr:last-child td {
+  border-bottom: 0px;
+}
+
+/* setpoints */
+#temperature #humidity,
+.setpoints {
+  background-color: #444a6a;
+  color: #FFF;
+  width: 37.25%;
+  height: 32.94%;
+  margin: 0 0 1.46% 1.46%;
+  display: inline-block;
+}
+
+#temperature #humidity,
+.setpoints h3 {
+  padding: 5% 0 5% 5%;
+  font-size: 25px;
+  display: inline-block;
+}
+
+#temperature #humidity,
+.setpoints input[type=text] {
+  width: 60px;
+  margin-left: 100px;
+}
+
+/* ideal situation */
+#temperature #humidity,
+.idealsituation {
+  background-color: #444a6a;
+  color: #FFF;
+  width: 37.25%;
+  height: 24.25%;
+  margin: 0 0 1.46% 1.46%;
+  display: inline-block;
+}
+
+#temperature #humidity,
+.idealvalue {
+  font-size: 50px;
+  padding: 2%;
+  font-weight: 300;
+}
+
+#temperature #humidity,
+.reason {
+  font-weight: 300;
+  padding: 2% 2%;
+}
+
+/* outside */
+#temperature #humidity,
+.outside {
+  background-color: #444a6a;
+  color: #FFF;
+  width: 37.25%;
+  height: 23.70%;
+  margin: 0 0 1.46% 1.46%;
+  display: inline-block;
+}
+
+#temperature #humidity,
+.outside img {
+  padding: 5% 0 0 5%;
+  float: left;
+}
+
+#temperature #humidity,
+.idealvalue {
+  text-align: center;
+}
+
+#temperature #humidity,
+.outside h3 {
+  display: block;
+  padding-bottom: 5%;
+}
+
+#temperature #humidity,
+h2 {
+  padding: 2%;
+  padding-left: 2%;
+  font-size: 23px;
+}
+
+#temperature #humidity,
+#outsidedetail table {
+  margin: 2px;
+  margin-top: 2px;
+  float: right;
+  display: inline;
+}
+
+#temperature #humidity,
+#outsidedetail table tr td {
+  padding: 15px;
+}
+
+#temperature #humidity,
+#outsidedetail td {
+  border-bottom: 0px;
+  padding: 20px;
+  font-size: 16pt;
+}
+
+#temperature #humidity,
+#outsidedetail td:first-child {
+  padding-right: 0px;
+  text-align: left;
+}
+
+#temperature #humidity,
+#outsidedetail td:last-child {
+  padding-left: 0px;
+  text-align: right;
+}
+
+#temperature #humidity,
+#outsidedetail tr:last-child td {
+  border-bottom: 0px;
+}
+
+#temperature #humidity,
+#outsidedetail tr:first-child td {
+  padding-top: 0px;
+}

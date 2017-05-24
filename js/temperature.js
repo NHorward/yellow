@@ -61,7 +61,7 @@ function showTemperatureHistory() {
 
 // Functie die de laatste outside data ophaalt en weergeeft in een tabel
 function showOutsideData() {
- var outsideContainer = document.getElementById("outside");
+ var outsideContainer = document.getElementById("outsidedetail");
  var outsideTable = document.createElement("table");
  for (i = 0; i < 3; i++) {
   var outsideRow = document.createElement("tr");
