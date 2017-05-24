@@ -4,12 +4,12 @@
 <head>
   <title>Integration Mobile</title>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/reset.css">
   <link rel="stylesheet" href="../fonts/font.css">
   <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="../CSS/detail.css">
   <link rel="stylesheet" href="../CSS/styleHumidity.css">
+  <link rel="stylesheet" href="../CSS/detail.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
 
 <body>
@@ -20,38 +20,39 @@
         <li class="navIcons">
           <a href="../index.html" class="icon-dash selected"></a>
         </li>
-        <li class=""> <a href="../index.html" class="selected">Home</a> </li>
+        <li> <a href="../index.html" class="selected">Home</a> </li>
         <li>
           <hr class="navLine"> </li>
         <li class="navIcons">
-          <a href="../html/outside.html" class="icon-leaf"></a>
+          <a href="outside.html" class="icon-leaf"></a>
         </li>
-        <li><a href="../html/outside.html">Outside</a></li>
+        <li><a href="outside.html">Outside</a></li>
         <li>
           <hr class="navLine"> </li>
         <li class="navIcons">
-          <a href="../html/rooms.html" class="icon-rooms"></a>
+          <a href="rooms.html" class="icon-rooms"></a>
         </li>
-        <li><a href="../html/rooms.html">Rooms</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
         <li>
           <hr class="navLine"> </li>
         <li class="navIcons">
-          <a href="../html/history.html" class="icon-history"></a>
+          <a href="history.html" class="icon-history"></a>
         </li>
-        <li><a href="../html/history.html">History</a></li>
+        <li><a href="history.html">History</a></li>
         <li>
           <hr class="navLine"> </li>
         <li class="navIcons">
-          <a href="../html/profile.html" class="icon-profile"></a>
+          <a href="profile.html" class="icon-profile"></a>
         </li>
-        <li><a href="../html/profile.html">Profile</a></li>
+        <li><a href="profile.html">Profile</a></li>
       </ul>
     </nav>
   </header>
-  <main id="nosie">
+
+  <main id="noise">
     <div class="title">
       <a href="../index.html"><img src="../img/back.png" width=2%></a>
-      <h1>NOISE LEVEL</h1></div>
+      <h1>NOISE</h1></div>
     <div class="notificationIcon">
       <a href="" class="icon-notification"></a>
     </div>
@@ -63,7 +64,7 @@
       </section>
       <section class="room">
         <h3>Living room noise level</h3></section>
-      <section id="co2History"></section>
+      <section id="noiseHistory"></section>
     </div>
 
     <div class="setpoints">
@@ -72,28 +73,24 @@
         <h3>Temperature</h3>
         <input type=text>°C</section>
       <section class="windowsopen">
-        <h3>Windows open</h3>
-        <label class="switch">
-          <input type="checkbox">
-          <div class="slider"></div>
-        </label>
-      </section>
+        <h3>Windows open</h3><label class="switch">
+     <input type="checkbox">
+     <div class="slider"></div>
+    </label></section>
       <section class="blindsup">
-        <h3>Blinds up</h3>
-        <label class="switch">
-          <input type="checkbox">
-          <div class="slider"></div>
-        </label>
-      </section>
+        <h3>Blinds up</h3><label class="switch">
+     <input type="checkbox">
+     <div class="slider"></div>
+    </label></section>
     </div>
 
     <div class="idealsituation">
       <h2>Ideally it would be...</h2>
       <section class="idealvalue">
-        <p>35db</p>
+        <p>&lt;50db</p>
       </section>
       <section class="reason">
-        <p>Not having too much noise in a room makes you a lot more relaxed. Yay to that!</p>
+        <p>At this temperature you're one step closer to the ideal living standards. It's not too hot and not too cold.</p>
       </section>
     </div>
 
@@ -103,6 +100,7 @@
       <section id="outsidedetail"></section>
     </div>
   </main>
+
   <script src="../js/jquery-3.2.0.js"></script>
   <script src="../js/noise.js"></script>
 </body>
