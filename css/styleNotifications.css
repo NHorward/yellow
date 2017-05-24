@@ -1,0 +1,39 @@
+/* MELDINGEN */
+#notificationContainer{
+ position: relative;
+ display: inline-block;
+}
+
+.notificationContent {
+ display: none;
+ position: absolute;
+ z-index: 1;
+background-color: #444a6a;
+ float: left;
+ margin-left: -305px;
+ width: 350px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+h3.newnotify{
+ padding: 20px;
+  background-color: #fa7b35;
+}
+
+h3.oldnotify{ 
+ background-color: #444a6a;
+ padding: 20px;
+}
+
+.show{
+ display: block;
+}
+
+.notificationicon{
+ background-color:#fa7b35; 
+}
+
+.blue {
+ background-color: #444a6a;
+}
+
