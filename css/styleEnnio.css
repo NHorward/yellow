@@ -1,256 +1,268 @@
 	@media screen and (max-width: 1024px) {
-	body {
-		font-family: 'Yellow', 'lato', sans-serif;
-		font-size: 20px;
-		font-weight: 400;
+		body {
+			font-family: 'Yellow', 'lato', sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+		}
+		/* navigatie */
+		header {
+			background-color: #444a6a;
+			margin: 0 auto 0 auto;
+			height: 100%;
+			width: 7.66%;
+			float: left;
+		}
+		nav ul img {
+			width: 100%;
+			height: 80px;
+			margin-bottom: 15px;
+			margin-top: 20px;
+		}
+		nav ul li a {
+			text-decoration: none;
+			color: white;
+			font-weight: 300;
+		}
+		nav ul li {
+			text-align: center;
+		}
+		.selected {
+			color: #f47936;
+		}
+		.navLine {
+			width: 80%;
+			margin-top: 9px;
+			margin-bottom: 24px;
+		}
+		.navIcons {
+			padding-bottom: 10px;
+		}
+		/* DASHBOARD Ennio */
+		#optionMenu {
+			float: left;
+			height: 45px;
+			width: 97.8%;
+			margin: 0px 0px 0px 0px;
+			background-color: #444a6a;
+			border-radius: 0;
+			border-color: #444a6a;
+			position: relative;
+			color: white;
+		}
+		select {
+			box-sizing: content-box;
+			padding: 0px 0px 0px 10px;
+		}
+		#dash .parameters {
+			width: 55.08%;
+			height: 85%;
+			float: left;
+			margin: 0px 0px 0px 15px;
+		}
+		#dash .dropdown {
+			float: left;
+			height: 45px;
+			width: 100%;
+			background-color: #444a6a;
+		}
+		#dash .dropdown h2 {
+			font-weight: 400;
+			color: white;
+			margin-left: 15px;
+			margin-top: 10px;
+			float: left;
+		}
+		#dash .icon-arrow {
+			text-decoration: none;
+			color: white;
+			float: right;
+			font-size: 35px;
+			margin-right: 10px;
+			margin-top: 7px;
+			position: absolute;
+			left: 610;
+		}
+		/*Colom*/
+		#dash .column a {
+			text-decoration: none;
+			color: white;
+		}
+		#dash .column {
+			width: 48.54%;
+			height: 91%;
+			float: left;
+			margin-top: 15px;
+			margin-right: 15px;
+		}
+		#dash .column:last-of-type {
+			margin-right: 0;
+		}
+		#dash .temperature {
+			height: 210px;
+			background-color: #444a6a;
+			margin-bottom: 15px;
+		}
+		#dash .column h2 {
+			text-align: center;
+			padding-top: 5px;
+			font-size: 22px;
+		}
+		#dash .co2 {
+			height: 163px;
+			background-color: #444a6a;
+			margin-bottom: 15px;
+		}
+		#dash .illuminance {
+			height: 190px;
+			background-color: #444a6a;
+		}
+		#dash .humidity {
+			height: 163px;
+			background-color: #444a6a;
+			margin-bottom: 15px;
+		}
+		#dash .noise {
+			height: 190px;
+			background-color: #444a6a;
+			margin-bottom: 15px;
+		}
+		#dash .pressure {
+			height: 210px;
+			background-color: #444a6a;
+			margin-bottom: 15px;
+		}
+		#dash .badIcon {
+			color: #da475e;
+		}
+		#dash .goodIcon {
+			color: #57be89;
+		}
+		#dash #tempIcon {
+			font-size: 90px;
+			float: right;
+			margin-top: 50px;
+		}
+		#dash #CO2Icon {
+			font-size: 50px;
+			margin-top: 50px;
+			margin-right: 20px;
+			float: right;
+		}
+		#dash #illumIcon {
+			font-size: 70px;
+			margin-top: 40px;
+			margin-right: 20px;
+			float: right;
+		}
+		#dash #humIcon {
+			font-size: 70px;
+			margin-top: 40px;
+			margin-right: 20px;
+			float: right;
+		}
+		#dash #noiseIcon {
+			font-size: 70px;
+			margin-top: 40px;
+			margin-right: 40px;
+			float: right;
+		}
+		#dash #pressIcon {
+			font-size: 70px;
+			margin-top: 10px;
+			text-align: center;
+		}
 	}
-	/* navigatie */
-	header {
-		background-color: #444a6a;
-		margin: 0 auto 0 auto;
-		height: 100%;
-		width: 7.66%;
-		float: left;
+	
+	#dash div#tempValue {
+		font-size: 60px;
+		font-weight: 300;
+		margin-left: 15%;
+		margin-top: 20%;
+		display: inline-block;
 	}
-	nav ul img {
-		width: 100%;
-		height: 80px;
-		margin-bottom: 15px;
-		margin-top: 20px;
+	
+	#dash div#co2Value {
+		font-size: 60px;
+		font-weight: 300;
+		margin-left: 5%;
+		margin-top: 10%;
+		display: inline-block;
 	}
-	nav ul li a {
-		text-decoration: none;
-		color: white;
+	
+	#dash div#illumValue {
+		font-size: 60px;
+		font-weight: 300;
+		margin-left: 15%;
+		margin-top: 15%;
+		display: inline-block;
+	}
+	
+	#dash div#humValue {
+		font-size: 60px;
+		font-weight: 300;
+		margin-left: 15%;
+		margin-top: 15%;
+		display: inline-block;
+	}
+	
+	#dash div#noiseValue {
+		font-size: 60px;
+		font-weight: 300;
+		margin-left: 15%;
+		margin-top: 14%;
+		display: inline-block;
+	}
+	
+	#dash span {
+		font-size: 28px;
 		font-weight: 300;
 	}
-	nav ul li {
-		text-align: center;
+	
+	#dash div#pressValue {
+		font-size: 60px;
+		font-weight: 300;
+		margin-left: 17%;
+		margin-top: 10%;
+		display: inline-block;
 	}
-	.selected {
-		color: #f47936;
+	
+	#dash div#windSValue {
+		font-size: 60px;
+		font-weight: 300;
+		margin-left: 10%;
+		margin-top: 20%;
+		display: inline-block;
 	}
-	.navLine {
-		width: 80%;
-		margin-top: 9px;
-		margin-bottom: 24px;
+	
+	#dash div#windDValue {
+		font-size: 60px;
+		font-weight: 300;
+		margin-left: 30%;
+		margin-top: 20%;
 	}
-	.navIcons {
-		padding-bottom: 10px;
+	
+	#dash div#vocValue {
+		font-size: 60px;
+		font-weight: 300;
+		margin-left: 10%;
+		margin-top: 20%;
+		display: inline-block;
 	}
-	/* DASHBOARD Ennio */
-	#optionMenu {
-		float: left;
-		height: 45px;
-		width: 97.8%;
-		margin: 0px 0px 0px 0px;
-		background-color: #444a6a;
-		border-radius: 0;
-		border-color: #444a6a;
-		position: relative;
-		color: white;
-	}
-	select {
-		box-sizing: content-box;
-		padding: 0px 0px 0px 10px;
-	}
-	#dash .parameters {
-		width: 55.08%;
-		height: 85%;
-		float: left;
-		margin: 0px 0px 0px 15px;
-	}
-	#dash .dropdown {
-		float: left;
-		height: 45px;
-		width: 100%;
-		background-color: #444a6a;
-	}
-	#dash .dropdown h2 {
-		font-weight: 400;
-		color: white;
-		margin-left: 15px;
-		margin-top: 10px;
-		float: left;
-	}
-	#dash .icon-arrow {
-		text-decoration: none;
-		color: white;
-		float: right;
-		font-size: 35px;
-		margin-right: 10px;
-		margin-top: 7px;
-		position: absolute;
-		left: 610;
-	}
-	/*Colom*/
-	#dash .column a {
-		text-decoration: none;
-		color: white;
-	}
-	#dash .column {
-		width: 48.54%;
-		height: 91%;
-		float: left;
-		margin-top: 15px;
-		margin-right: 15px;
-	}
-	#dash .column:last-of-type {
-		margin-right: 0;
-	}
-	#dash .temperature {
-		height: 210px;
-		background-color: #444a6a;
-		margin-bottom: 15px;
-	}
-	#dash .column h2 {
-		text-align: center;
-		padding-top: 5px;
-		font-size: 22px;
-	}
-	#dash .co2 {
-		height: 163px;
-		background-color: #444a6a;
-		margin-bottom: 15px;
-	}
-	#dash .illuminance {
-		height: 190px;
-		background-color: #444a6a;
-	}
-	#dash .humidity {
-		height: 163px;
-		background-color: #444a6a;
-		margin-bottom: 15px;
-	}
-	#dash .noise {
-		height: 190px;
-		background-color: #444a6a;
-		margin-bottom: 15px;
-	}
-	#dash .pressure {
-		height: 210px;
-		background-color: #444a6a;
-		margin-bottom: 15px;
-	}
-      #dash .badIcon{
-      color:#da475e;
-    }
-    #dash .goodIcon{
-      color:#57be89;
-    }
-    #dash #tempIcon{
-     font-size: 90px;
-      float: right;
-      margin-top: 50px;
-    }
-    #dash #CO2Icon{
-      font-size: 50px;
-      margin-top: 50px;
-      margin-right: 20px;
-      float: right;
-    }
-    #dash #illumIcon{
-      font-size: 70px;
-      margin-top: 40px;
-      margin-right: 20px;
-      float: right;
-    }
-    #dash #humIcon{
-      font-size: 70px;
-      margin-top: 40px;
-      margin-right: 20px;
-      float: right;
-    }
-    #dash #noiseIcon{
-      font-size: 70px;
-      margin-top: 40px;
-      margin-right: 40px;
-      float: right;
-    }
-    #dash #pressIcon{
-      font-size: 70px;
-      margin-top: 10px;
-      text-align: center;
-    }
-    
-    }
-    #dash div#tempValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 15%;
-      margin-top: 20%;
-      display: inline-block;
-    }
-    #dash div#co2Value {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 5%;
-      margin-top: 10%;
-      display: inline-block;
-    }
-    #dash div#illumValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 15%;
-      margin-top: 15%;
-      display: inline-block;
-    }
-    #dash div#humValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 15%;
-      margin-top: 15%;
-      display: inline-block;
-    }
-    #dash div#noiseValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 15%;
-      margin-top: 14%;
-      display: inline-block;
-    }
-    #dash span{
-      font-size: 28px;
-      font-weight: 300;
-    }
-    #dash div#pressValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 17%;
-      margin-top: 10%;
-      display: inline-block;
-    }
-    #dash div#windSValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 10%;
-      margin-top: 20%;
-      display: inline-block;
-    }
-    #dash div#windDValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 30%;
-      margin-top: 20%;
-    }
-    #dash div#vocValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 10%;
-      margin-top: 20%;
-      display: inline-block;
-    }
+	
 	#dash .house {
 		width: 32.47%;
 		height: 59.5295%;
 		float: left;
 		margin: 0px 0px 0px 15px;
 	}
+	
 	#dash .houseTitle {
 		float: left;
 		height: 45px;
 		width: 100%;
 		background-color: #444a6a;
 	}
+	
 	#dash .houseTitle h2 {
 		font-weight: 400;
 		color: white;
@@ -258,18 +270,21 @@
 		margin-top: 10px;
 		float: left;
 	}
+	
 	#dash .outside {
 		width: 32.47%;
 		height: 25.4566%;
 		float: left;
 		margin: 0px 0px 0px 15px;
 	}
+	
 	#dash .outsideTitle {
 		float: left;
 		height: 45px;
 		width: 100%;
 		background-color: #444a6a;
 	}
+	
 	#dash .outsideTitle h2 {
 		font-weight: 400;
 		color: white;
@@ -277,13 +292,16 @@
 		margin-top: 10px;
 		/*		float: left;*/
 	}
+	
 	#dash .outside img {
 		padding: 45px 0 0 15px;
 		float: left;
 	}
+	
 	#dash .outside section:first-of-type {
 		padding-top: 20px;
 	}
+	
 	#dash .outside h3 {
 		display: block;
 		padding-bottom: 5%;
@@ -292,20 +310,24 @@
 		font-weight: 400;
 	}
 	/* PROFILE Ennio */
+	
 	#dash .myHouse {
 		height: 290px;
 		background-color: #444a6a;
 		margin-bottom: 15px;
 	}
+	
 	#dash .myHouse h2 {
 		font-size: 25px;
 		font-weight: 400;
 	}
+	
 	#dash .addAndCompare {
 		height: 137.5px;
 		background-color: #444a6a;
 		margin-bottom: 15px;
 	}
+	
 	#dash .addAndCompare h2 {
 		text-align: center;
 		padding-top: 30px;
@@ -314,22 +336,26 @@
 		float: right;
 		margin-right: 40px;
 	}
+	
 	#dash .addAndCompare img {
 		float: left;
 		margin-top: 33px;
 		margin-left: 35px;
 		width: 55px;
 	}
+	
 	#dash .icon-house {
 		font-size: 150px;
 		text-align: center;
 		font-weight: bold;
 	}
+	
 	#dash .myHouse p {
 		font-size: 23px;
 		text-align: center;
 		font-weight: 300;
 	}
+	
 	#dash button {
 		background-color: #ee732a;
 		color: white;
@@ -340,10 +366,12 @@
 		margin: auto;
 		margin-top: 10%;
 	}
+	
 	#dash h3 {
 		font-weight: 300;
 		font-size: 20px;
 	}
+	
 	#dash .doNotDisturb {
 		width: 32.47%;
 		height: 31.234%;
@@ -351,27 +379,32 @@
 		margin: 0px 0px 15px 15px;
 		background-color: #444a6a;
 	}
+	
 	#dash .doNotDisturbTitle {
 		/*		float: left;*/
 		height: 45px;
 		width: 100%;
 		background-color: #444a6a;
 	}
+	
 	#dash .doNotDisturbTitle h2 {
 		font-weight: 400;
 		color: white;
 		margin-left: 15px;
 		margin-top: 10px;
 	}
+	
 	#dash .doNotDisturb p {
 		margin-top: 12px;
 		margin-left: 40px;
 		font-weight: 300;
 		font-size: 26px;
 	}
+	
 	#dash .doNotDisturb hr {
 		margin: 30px;
 	}
+	
 	#dash .customizeDash {
 		width: 32.47%;
 		height: 52%;
@@ -379,6 +412,7 @@
 		margin: 0px 0px 0px 15px;
 		background-color: #444a6a;
 	}
+	
 	#dash .customizeDashTitle h2 {
 		font-weight: 400;
 		color: white;
@@ -386,28 +420,58 @@
 		margin-top: 10px;
 		/*		float: left;*/
 	}
+	
 	#dash .customizeDash input {
 		width: 27px;
 		height: 27px;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
+	
 	#dash .customizeDash input:first-of-type {
 		margin-top: 15px;
 	}
+	
 	#dash .blindsup h3 {
 		margin-top: 10px;
 		float: left;
 	}
+	
 	#dash .blindsup:first-of-type {
 		margin-top: 10px;
 	}
+	
 	#dash .blindsup {
 		height: 44px;
 		margin-left: 15px;
 	}
+	
+	#dash .icon-block {
+		display: inline-block;
+		padding-top: 15px;
+		font-size: 40px;
+	}
+	
+	#dash .icon-emptyblock {
+		display: inline-block;
+		padding-top: 15px;
+		font-size: 40px;
+	}
+	
+	#dash .house h2 {
+		display: inline-block;
+	}
+	
+	#dash .sortHouse {
+		margin-top: 10px;
+	}
+	
+	#dash .sorthouse h2 {
+		vertical-align: 45%;
+	}
 	/* Toggle Button */
 	/* Geraadpleegde bron: W3Schools, How to create a toggle switch.  https://www.w3schools.com/howto/howto_css_switch.asp Datum van raadpleging: 23 mei 2017*/
+	
 	.switch {
 		float: left;
 		position: relative;
@@ -416,9 +480,11 @@
 		height: 34px;
 		margin: 5px;
 	}
+	
 	.switch input {
 		display: none;
 	}
+	
 	.slider {
 		float: left;
 		display: inline-block;
@@ -433,6 +499,7 @@
 		border-radius: 34px;
 		margin-right: 5px;
 	}
+	
 	.slider:before {
 		display: inline-block;
 		position: absolute;
@@ -445,9 +512,11 @@
 		transition: 0.4s;
 		border-radius: 50%;
 	}
+	
 	input:checked + .slider {
 		background-color: #fa7b35;
 	}
+	
 	input:checked + .slider:before {
 		transform: translateX(26px);
 	}
