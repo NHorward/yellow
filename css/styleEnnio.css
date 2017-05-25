@@ -434,6 +434,7 @@
 	
 	#dash .blindsup h3 {
 		margin-top: 10px;
+		margin-left: 10px;
 		float: left;
 	}
 	
@@ -497,7 +498,6 @@
 		bottom: 0;
 		transition: 0.4s;
 		border-radius: 34px;
-		margin-right: 5px;
 	}
 	
 	.slider:before {
