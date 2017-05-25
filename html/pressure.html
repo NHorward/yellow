@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../CSS/reset.css">
   <link rel="stylesheet" href="../fonts/font.css">
   <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/detail.css">
+  <link rel="stylesheet" href="../CSS/styleHumidity.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
 
 <body>
@@ -46,7 +48,61 @@
       </ul>
     </nav>
   </header>
-  <script src="../js/index.js"></script>
+  <main id="pressure">
+    <div class="title">
+      <a href="../index.html"><img src="../img/back.png" width=2%></a>
+      <h1>PRESSURE</h1></div>
+    <div class="notificationIcon">
+      <a href="" class="icon-notification"></a>
+    </div>
+
+    <div class="orange">
+      <section class="hour" id="hour"></section>
+      <section class="value" id="value"> </section>
+      <section class="room">
+        <h3>Current living room pressure</h3></section>
+      <section id="pressureHistory"></section>
+    </div>
+
+    <div class="setpoints">
+      <h2>Setpoints</h2>
+      <section class="settemperature">
+        <h3>Temperature</h3>
+        <input type=text>°C</section>
+      <section class="windowsopen">
+        <h3>Windows open</h3>
+        <label class="switch">
+          <input type="checkbox">
+          <div class="slider"></div>
+        </label>
+      </section>
+      <section class="blindsup">
+        <h3>Blinds up</h3>
+        <label class="switch">
+          <input type="checkbox">
+          <div class="slider"></div>
+        </label>
+      </section>
+    </div>
+    <div class="idealsituation">
+      <h2>Ideally it would be...</h2>
+      <section class="idealvalue">
+        <p>1021hPa</p>
+      </section>
+      <section class="reason">
+        <p>Don't put too much pressure on yourself right? It's not good for  your health.</p>
+      </section>
+    </div>
+    <div class="outside">
+      <h2>Outside</h2>
+      <img src="../img/weer.png" width=30%>
+      <section id="outsidedetail">
+      </section>
+    </div>
+
+  </main>
+  <script src="../js/jquery-3.2.0.js"></script>
+  <script src="../js/pressure.js"></script>
 </body>
 
 </html>

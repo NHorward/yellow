@@ -4,6 +4,7 @@ var lastValue;
 
 // Functie die JSON data ophaalt 
 // Array van data wordt toegevoegd aan var sensorData
+
 $(document).ready(function () {
  $.ajax({
   type: "get"
@@ -11,9 +12,9 @@ $(document).ready(function () {
   , dataType: "json"
   , success: function (data) {
    sensorData = data.day;
-   lastValue = sensorData.length - 1;
+   lastValue = sensorData.length -1;
    console.log(sensorData);
-   showTime();
+  showTime();
    showco2();
    showco2History();
    showOutsideData();
@@ -48,7 +49,7 @@ function showco2History() {
   var historyTime = document.createElement("td");
   var time = document.createTextNode(sensorData[i].time);
   var historyco2 = document.createElement("td");
-  var co2 = document.createTextNode(sensorData[i].NoiseLevelLiving + "ppm");
+  var co2 = document.createTextNode(sensorData[i].CO2Living + "ppm");
   historyTime.appendChild(time);
   historyco2.appendChild(co2);
   historyRow.appendChild(historyTime);

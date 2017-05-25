@@ -13,7 +13,7 @@
 }
 
 /* oranje deel */
-#temperature #humidity,
+#temperature #humidity ,
 .orange {
   background-color: #fa7b35;
   color: #FFF;
@@ -24,63 +24,63 @@
   float: left;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 .orange .hour {
   padding: 2% 0 0 2%;
   font-size: 25px;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 .orange .room {
   text-align: center;
   font-size: 27px;
   padding-top: 2%;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 .orange .value {
   font-size: 120px;
   text-align: center;
   padding-top: 10%;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 table {
   margin: 45px;
-  margin-top: 70px;
+  margin-bottom: 0;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 table tr td {
   padding: 15px;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 td {
   border-bottom: 1px solid white;
   padding: 20px;
   font-size: 20pt;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 td:first-child {
   padding-right: 120px;
   text-align: left;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 td:last-child {
   padding-left: 120px;
   text-align: right;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 tr:last-child td {
   border-bottom: 0px;
 }
 
 /* setpoints */
-#temperature #humidity,
+#temperature #humidity ,
 .setpoints {
   background-color: #444a6a;
   color: #FFF;
@@ -90,21 +90,21 @@ tr:last-child td {
   display: inline-block;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 .setpoints h3 {
   padding: 5% 0 5% 5%;
   font-size: 25px;
   display: inline-block;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 .setpoints input[type=text] {
   width: 60px;
   margin-left: 100px;
 }
 
 /* ideal situation */
-#temperature #humidity,
+#temperature #humidity ,
 .idealsituation {
   background-color: #444a6a;
   color: #FFF;
@@ -114,21 +114,21 @@ tr:last-child td {
   display: inline-block;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 .idealvalue {
   font-size: 50px;
   padding: 2%;
   font-weight: 300;
 }
  
-#temperature #humidity,
+#temperature #humidity ,
 .reason { 
   font-weight: 300;
   padding: 2% 2%;
 }
 
 /* outside */
-#temperature #humidity,
+#temperature #humidity ,
 .outside {
   background-color: #444a6a;
   color: #FFF;
@@ -144,25 +144,25 @@ tr:last-child td {
   float: left;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 .idealvalue {
   text-align: center;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 .outside h3 {
   display: block;
   padding-bottom: 5%;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 h2 {
   padding: 2%;
   padding-left: 2%;
   font-size: 23px;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 #outsidedetail table {
   margin: 2px;
   margin-top: 2px;
@@ -170,36 +170,36 @@ h2 {
   display: inline;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 #outsidedetail table tr td {
   padding: 15px;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 #outsidedetail td {
   border-bottom: 0px;
   padding: 20px;
   font-size: 16pt;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 #outsidedetail td:first-child {
   padding-right: 0px;
   text-align: left;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 #outsidedetail td:last-child {
   padding-left: 0px;
   text-align: right;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 #outsidedetail tr:last-child td {
   border-bottom: 0px;
 }
 
-#temperature #humidity,
+#temperature #humidity ,
 #outsidedetail tr:first-child td {
   padding-top: 0px;
 }
