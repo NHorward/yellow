@@ -1,92 +1,92 @@
 @font-face {
-  font-family: 'Yellow';
-  src: url('../fonts/Yellow.eot?er7cdp');
-  src: url('../fonts/Yellow.eot?er7cdp#iefix') format('embedded-opentype'), url('../fonts/Yellow.ttf?er7cdp') format('truetype'), url('../fonts/Yellow.woff?er7cdp') format('woff'), url('../fonts/Yellow.svg?er7cdp#Yellow') format('svg');
+  font-family: 'yellowfont';
+  src:  url('../fonts/yellowfont.eot?247qlf');
+  src:  url('../fonts/yellowfont.eot?247qlf#iefix') format('embedded-opentype'),
+    url('../fonts/yellowfont.ttf?247qlf') format('truetype'),
+    url('../fonts/yellowfont.woff?247qlf') format('woff'),
+    url('../fonts/yellowfont.svg?247qlf#yellowfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Yellow' !important;
+  font-family: 'yellowfont' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-leaf:before {
-  content: "\e900";
-  font-size: 55px;
-}
-
-.icon-block:before {
-  content: "\e901";
-}
-
-.icon-dash:before {
-  content: "\e902";
-  font-size: 55px;
-}
-
-.icon-history:before {
-  content: "\e903";
-  font-size: 50px;
-}
-
-.icon-house:before {
-  content: "\e904";
-}
-
-.icon-ear:before {
+.icon-thermometer:before {
   content: "\e905";
 }
-
-.icon-arrow:before {
+.icon-back:before {
+  content: "\e900";
+}
+.icon-leaf:before {
+  content: "\e901";
+  font-size: 55px;
+}
+.icon-block:before {
+  content: "\e902";
+}
+.icon-cloud:before {
+  content: "\e903";
+}
+.icon-dash:before {
+  content: "\e904";
+  font-size: 55px;
+}
+.icon-history:before {
   content: "\e906";
-}
-
-.icon-lamp:before {
-  content: "\e907";
-}
-
-.icon-emptyblock:before {
-  content: "\e908";
-}
-
-.icon-notification:before {
-  content: "\e909";
-  font-size: 35px;
-}
-
-.icon-pressure:before {
-  content: "\e90a";
-}
-
-.icon-profile:before {
-  content: "\e90b";
   font-size: 50px;
 }
-
-.icon-rooms:before {
-  content: "\e90c";
-  font-size: 40px;
+.icon-house:before {
+  content: "\e907";
 }
-
-.icon-thermometer:before {
+.icon-arrow:before {
+  content: "\e908";
+}
+.icon-lamp:before {
+  content: "\e909";
+}
+.icon-emptyblock:before {
+  content: "\e90a";
+}
+.icon-ear:before {
+  content: "\e90b";
+}
+.icon-notification:before {
+  content: "\e90c";
+  font-size: 45px;
+}
+.icon-pressure:before {
   content: "\e90d";
 }
-
-.icon-water:before {
+.icon-profile:before {
   content: "\e90e";
+  font-size: 50px;
 }
-
-.icon-cloud:before {
+.icon-rooms:before {
+  content: "\e90f";
+  font-size: 40px;
+}
+.icon-voc:before {
   content: "\e910";
+}
+.icon-water:before {
+  content: "\e911";
+}
+.icon-winddirection:before {
+  content: "\e912";
+}
+.icon-windspeed:before {
+  content: "\e913";
 }
