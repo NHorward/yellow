@@ -1,3 +1,5 @@
+// JavaScript Profile Pagina
+
 // NOTIFICATIES 
 
 // Functie die de notificaties weergeeft bij het klikken
