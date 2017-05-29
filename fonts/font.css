@@ -1,92 +1,108 @@
 @font-face {
-  font-family: 'yellowfont';
-  src:  url('../fonts/yellowfont.eot?247qlf');
-  src:  url('../fonts/yellowfont.eot?247qlf#iefix') format('embedded-opentype'),
-    url('../fonts/yellowfont.ttf?247qlf') format('truetype'),
-    url('../fonts/yellowfont.woff?247qlf') format('woff'),
-    url('../fonts/yellowfont.svg?247qlf#yellowfont') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'yellowfont';
+	src: url('../fonts/yellowfont.eot?247qlf');
+	src: url('../fonts/yellowfont.eot?247qlf#iefix') format('embedded-opentype'), url('../fonts/yellowfont.ttf?247qlf') format('truetype'), url('../fonts/yellowfont.woff?247qlf') format('woff'), url('../fonts/yellowfont.svg?247qlf#yellowfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'yellowfont' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'yellowfont' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .icon-thermometer:before {
-  content: "\e905";
+	content: "\e905";
 }
+
 .icon-back:before {
-  content: "\e900";
+	content: "\e900";
 }
+
 .icon-leaf:before {
-  content: "\e901";
-  font-size: 55px;
+	content: "\e901";
+	font-size: 55px;
 }
+
 .icon-block:before {
-  content: "\e902";
+	content: "\e902";
 }
+
 .icon-cloud:before {
-  content: "\e903";
+	content: "\e903";
 }
+
 .icon-dash:before {
-  content: "\e904";
-  font-size: 55px;
+	content: "\e904";
+	font-size: 55px;
 }
+
 .icon-history:before {
-  content: "\e906";
-  font-size: 50px;
+	content: "\e906";
+	font-size: 50px;
 }
+
 .icon-house:before {
-  content: "\e907";
+	content: "\e907";
 }
+
 .icon-arrow:before {
-  content: "\e908";
+	content: "\e908";
 }
+
 .icon-lamp:before {
-  content: "\e909";
+	content: "\e909";
 }
+
 .icon-emptyblock:before {
-  content: "\e90a";
+	content: "\e90a";
 }
+
 .icon-ear:before {
-  content: "\e90b";
+	content: "\e90b";
 }
+
 .icon-notification:before {
-  content: "\e90c";
-  font-size: 45px;
+	content: "\e90c";
+	font-size: 35px;
 }
+
 .icon-pressure:before {
-  content: "\e90d";
+	content: "\e90d";
 }
+
 .icon-profile:before {
-  content: "\e90e";
-  font-size: 50px;
+	content: "\e90e";
+	font-size: 50px;
 }
+
 .icon-rooms:before {
-  content: "\e90f";
-  font-size: 40px;
+	content: "\e90f";
+	font-size: 40px;
 }
+
 .icon-voc:before {
-  content: "\e910";
+	content: "\e910";
 }
+
 .icon-water:before {
-  content: "\e911";
+	content: "\e911";
 }
+
 .icon-winddirection:before {
-  content: "\e912";
+	content: "\e912";
 }
+
 .icon-windspeed:before {
-  content: "\e913";
+	content: "\e913";
 }
