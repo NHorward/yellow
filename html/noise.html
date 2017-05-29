@@ -2,107 +2,124 @@
 <html lang="en">
 
 <head>
-  <title>Integration Mobile</title>
-  <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="../CSS/reset.css">
-  <link rel="stylesheet" href="../fonts/font.css">
-  <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="../CSS/styleHumidity.css">
-  <link rel="stylesheet" href="../CSS/detail.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
+ <title>Integration Mobile</title>
+ <meta charset="UTF-8">
+ <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+ <link rel="stylesheet" href="../CSS/reset.css">
+ <link rel="stylesheet" href="../fonts/font.css">
+ <link rel="stylesheet" href="../CSS/style.css">
+ <link rel="stylesheet" href="../CSS/styleHumidity.css">
+ <link rel="stylesheet" href="../CSS/detail.css">
+ <link rel="stylesheet" href="../CSS/styleNotifications.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <a href="../index.html"><img src="../img/logo.png"></a>
-        <li class="navIcons">
-          <a href="../index.html" class="icon-dash selected"></a>
-        </li>
-        <li> <a href="../index.html" class="selected">Home</a> </li>
-        <li>
-          <hr class="navLine"> </li>
-        <li class="navIcons">
-          <a href="outside.html" class="icon-leaf"></a>
-        </li>
-        <li><a href="outside.html">Outside</a></li>
-        <li>
-          <hr class="navLine"> </li>
-        <li class="navIcons">
-          <a href="rooms.html" class="icon-rooms"></a>
-        </li>
-        <li><a href="rooms.html">Rooms</a></li>
-        <li>
-          <hr class="navLine"> </li>
-        <li class="navIcons">
-          <a href="history.html" class="icon-history"></a>
-        </li>
-        <li><a href="history.html">History</a></li>
-        <li>
-          <hr class="navLine"> </li>
-        <li class="navIcons">
-          <a href="profile.html" class="icon-profile"></a>
-        </li>
-        <li><a href="profile.html">Profile</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="noise">
-    <div class="title">
-      <a href="../index.html"><img src="../img/back.png" width=2%></a>
-      <h1>NOISE</h1></div>
-    <div class="notificationIcon">
-      <a href="" class="icon-notification"></a>
-    </div>
-
-    <div class="orange">
-      <section class="hour" id="hour">
-      </section>
-      <section class="value" id="value">
-      </section>
-      <section class="room">
-        <h3>Living room noise level</h3></section>
-      <section id="noiseHistory"></section>
-    </div>
-
-    <div class="setpoints">
-      <h2>Setpoints</h2>
-      <section class="settemperature">
-        <h3>Temperature</h3>
-        <input type=text>°C</section>
-      <section class="windowsopen">
-        <h3>Windows open</h3><label class="switch">
+ <header>
+  <nav>
+   <ul>
+    <a href="../index.html"><img src="../img/logo.png"></a>
+    <li class="navIcons">
+     <a href="../index.html" class="icon-dash selected"></a>
+    </li>
+    <li> <a href="../index.html" class="selected">Home</a> </li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="outside.html" class="icon-leaf"></a>
+    </li>
+    <li><a href="outside.html">Outside</a></li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="rooms.html" class="icon-rooms"></a>
+    </li>
+    <li><a href="rooms.html">Rooms</a></li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="history.html" class="icon-history"></a>
+    </li>
+    <li><a href="history.html">History</a></li>
+    <li>
+     <hr class="navLine"> </li>
+    <li class="navIcons">
+     <a href="profile.html" class="icon-profile"></a>
+    </li>
+    <li><a href="profile.html">Profile</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main id="noise">
+  <div class="title">
+   <a href="../index.html"><img src="../img/back.png" width=2%></a>
+   <h1>NOISE</h1></div>
+  <div class="notificationIcon">
+   <a href="#" class="icon-notification" onclick="showNotifications()"></a>
+   <div id="notificationContainer">
+    <div id="notificationContent" class="notificationContent">
+     <h3 class="newnotify" id="newnotify" onclick="clickedMessage()"> It's raining, time to close your windows! Hurry! </h3>
+     <div id="hiddenDialog" class="hiddenDialog" onclick="removeDialog()">
+      <h3 class="greenDialog">Done!</h3>
+      <h3 class="redDialog">No thanks! </h3></div>
+     <hr class="notLine">
+     <h3 class="oldnotify"> The rain stopped, you can open your windows again.</h3>
+     <hr class="notLine">
+     <h3 class="oldnotify"> It's too warm in the attic, maybe open the window? </h3>
+     <hr class="notLine">
+     <h3 class="oldnotify"> It's very cold in the kitchen! Turn on the heating before you become a snowman!</h3>
+     <hr class="notLine">
+     <h3 class="oldnotify"> Is there a party in the living room? There is too much noise! </h3>
+     <hr class="notLine">
+     <h3 class="oldnotify"> Open the blinds in the dining room, you aren't a vampire, are you? </h3>
+     <hr class="notLine">
+     <h3 class="oldnotify"> It's raining, time to close your windows! Hurry! </h3>
+     <hr class="notLine">
+     <h3 class="oldnotify"> The rain stopped, you can open your windows again.</h3></div>
+   </div>
+  </div>
+  <div class="orange">
+   <section class="hour" id="hour"> </section>
+   <section class="value" id="value"> </section>
+   <section class="room">
+    <h3>Living room noise level</h3></section>
+   <section id="noiseHistory"></section>
+  </div>
+  <div class="setpoints">
+   <h2>Setpoints</h2>
+   <section class="settemperature">
+    <h3>Temperature</h3>
+    <input type=text>°C</section>
+   <section class="windowsopen">
+    <h3>Windows open</h3>
+    <label class="switch">
      <input type="checkbox">
      <div class="slider"></div>
-    </label></section>
-      <section class="blindsup">
-        <h3>Blinds up</h3><label class="switch">
+    </label>
+   </section>
+   <section class="blindsup">
+    <h3>Blinds up</h3>
+    <label class="switch">
      <input type="checkbox">
      <div class="slider"></div>
-    </label></section>
-    </div>
-
-    <div class="idealsituation">
-      <h2>Ideally it would be...</h2>
-      <section class="idealvalue">
-        <p>&lt;50db</p>
-      </section>
-      <section class="reason">
-        <p>Turn down the volume and relax in an amazing atmosphere.</p>
-      </section>
-    </div>
-
-    <div class="outside">
-      <h2>Outside</h2>
-      <img src="../img/weer.png" width=30%>
-      <section id="outsidedetail"></section>
-    </div>
-  </main>
-
-  <script src="../js/jquery-3.2.0.js"></script>
-  <script src="../js/noise.js"></script>
+    </label>
+   </section>
+  </div>
+  <div class="idealsituation">
+   <h2>Ideally it would be...</h2>
+   <section class="idealvalue">
+    <p>&lt;50db</p>
+   </section>
+   <section class="reason">
+    <p>Turn down the volume and relax in an amazing atmosphere.</p>
+   </section>
+  </div>
+  <div class="outside">
+   <h2>Outside</h2> <img src="../img/weer.png" width=30%>
+   <section id="outsidedetail"></section>
+  </div>
+ </main>
+ <script src="../js/jquery-3.2.0.js"></script>
+ <script src="../js/noise.js"></script>
 </body>
 
 </html>
