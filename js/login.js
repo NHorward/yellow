@@ -1,4 +1,8 @@
+// JavaScript Login Pagina
+
+// Globale variabelen
 var accounts = [];
+var aanmelden = document.getElementById('button_aanmelden');
 
 $(function () {
 	$.ajax({
@@ -6,25 +10,18 @@ $(function () {
 		dataType: 'json',
 		success: onSuccess,
 		error: function (err) {
-			console.error('Fout: ', err);
+			
 		}
 	})
 
 	function onSuccess(data) {
 		accounts = data.accounts;
-		gelukt();
 	}
 });
 
-function gelukt() {
-	console.log('json geladen');
-}
 
-var aanmelden = document.getElementById('button_aanmelden');
-
-//aanmelden username met password
+//Functie voor het aanmelden username met password
 aanmelden.onclick = function () {
-
 
 	for (i = 0; i < accounts.length; i++) {
 
