@@ -460,3 +460,78 @@
       display: block;
     }
   }
+  /* NOTIFICATIONS */
+  
+  #notificationContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .notificationContent {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #444a6a;
+    float: left;
+    margin-left: -290px;
+    width: 335px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    max-height: 670px;
+    overflow: hidden;
+  }
+  
+  .newnotify {
+    padding: 20px;
+    color: white;
+    color: #fa7b35;
+    background-color: #444a6a;
+  }
+  
+  .oldnotify {
+    background-color: #444a6a;
+    color: #c8cacc;
+    padding: 20px;
+  }
+  
+  .notificationicon {
+    background-color: #fa7b35;
+  }
+  
+  .blue {
+    background-color: #444a6a;
+  }
+  
+  .notLine {
+    width: 80%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hiddenDialog {
+    background-color: #444a6a;
+    text-align: center;
+    display: none;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
+  }
+  
+  .show {
+    display: inline-block;
+  }
+  
+  .greenDialog {
+    color: #25db91;
+    float: left;
+    padding: 20px;
+    padding-top: 0;
+  }
+  
+  .redDialog {
+    color: #dc485e;
+    float: right;
+    padding: 20px;
+    padding-top: 0;
+  }
