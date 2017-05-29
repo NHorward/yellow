@@ -419,6 +419,7 @@
     .setpoints input[type=text] {
       width: 60px;
       margin-left: 100px;
+      margin-right: 5px;
     }
     /* ideal situation */
     #temperature #humidity,
