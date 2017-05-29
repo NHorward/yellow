@@ -66,10 +66,11 @@ body {
 	margin-top: 0px;
 	background-color: #444a6a;
 }
-#history #historyTemp{
+#history #historyTemp, #historyHum, #historyCO2, #historyIll, #historyNoise{
   width:94%;
   height:15%;
   margin:15px;
+  margin-top: 17px;
   border: 4px solid;
 }
 #history .thermoIcon{
@@ -80,12 +81,12 @@ body {
   float: left;
   display: inline-block;
 }
-#history .icon-thermometer{
+#history .icon-thermometer, .icon-water, .icon-cloud, .icon-lamp, .icon-ear{
   text-align: center;
   font-size: 60px;
   padding-top: 14px;
 }
-#history #chartTemp{
+#history #chartTemp, #chartHum, #chartCO2, #chartIll, chartNoise{
   width:70%;
   height:100%;
   float: left;
@@ -97,11 +98,67 @@ body {
   float:left;
   background-color: #da475e;
 }
-#history #tempValue{
-  font-size: 25px;
+#history #tempValue, #humValue, #co2Value, #illValue, #noiseValue{
+  font-size: 22px;
   font-weight: 300;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
+}
+#history .humIcon{
+  background-color:#33c5f3;
+  width:15%;
+  height:100%;
+  border-right: 4px solid;
+  float: left;
+  display: inline-block;
+}
+#history .hum{
+  width:14.3%;
+  height:100%;
+  float:left;
+  background-color: #33c5f3;
+}
+#history .co2Icon{
+  background-color:#57be89;
+  width:15%;
+  height:100%;
+  border-right: 4px solid;
+  float: left;
+  display: inline-block;
+}
+#history .co2{
+  width:14.3%;
+  height:100%;
+  float:left;
+  background-color: #57be89;
+}
+#history .illIcon{
+  background-color:#fcee21;
+  width:15%;
+  height:100%;
+  border-right: 4px solid;
+  float: left;
+  display: inline-block;
+}
+#history .ill{
+  width:14.3%;
+  height:100%;
+  float:left;
+  background-color: #fcee21;
+}
+#history .noiseIcon{
+  background-color:#e88452;
+  width:15%;
+  height:100%;
+  border-right: 4px solid;
+  float: left;
+  display: inline-block;
+}
+#history .noise{
+  width:14.3%;
+  height:100%;
+  float:left;
+  background-color: #e88452;
 }
 
 

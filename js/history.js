@@ -13,6 +13,10 @@ $(document).ready(function () {
    sensorData = data.day;
    console.log(sensorData);
     showTemperature();
+    showHumidity();
+    showCO2();
+    showIlluminance()
+    showNoise();
   }
  });
 });
@@ -23,14 +27,30 @@ function showTemperature() {
   var temp = document.createTextNode(parseInt(((parseInt(sensorData[0].TLiving))+(parseInt(sensorData[1].TLiving))+(parseInt(sensorData[2].TLiving))+(parseInt(sensorData[3].TLiving))+(parseInt(sensorData[4].TLiving))+(parseInt(sensorData[5].TLiving)))/sensorData.length)+"°C");
   temperature.appendChild(temp);
 }
-  
-//  var ctx = document.getElementById("chartTemp");
-//  var myTempChart = new Chart(ctx, {
-//    type: 'line',
-//    data: data,
-//    options: options
-//});
-//}
+function showHumidity() {
+  var lastValue = sensorData.length - 1;
+  var humidity = document.getElementById("humValue");
+  var hum = document.createTextNode(parseInt(((parseInt(sensorData[0].RHLiving))+(parseInt(sensorData[1].RHLiving))+(parseInt(sensorData[2].RHLiving))+(parseInt(sensorData[3].RHLiving))+(parseInt(sensorData[4].RHLiving))+(parseInt(sensorData[5].RHLiving)))/sensorData.length)+"%");
+  humidity.appendChild(hum);
+}
+function showCO2() {
+  var lastValue = sensorData.length - 1;
+  var co2Value = document.getElementById("co2Value");
+  var co2 = document.createTextNode(parseInt(((parseInt(sensorData[0].CO2Living))+(parseInt(sensorData[1].CO2Living))+(parseInt(sensorData[2].CO2Living))+(parseInt(sensorData[3].CO2Living))+(parseInt(sensorData[4].CO2Living))+(parseInt(sensorData[5].CO2Living)))/sensorData.length)+ "ppm");
+  co2Value.appendChild(co2);
+}
+function showIlluminance() {
+  var lastValue = sensorData.length - 1;
+  var illuminance = document.getElementById("illValue");
+  var ill = document.createTextNode(parseInt(((parseInt(sensorData[0].IlluminanceLiving))+(parseInt(sensorData[1].IlluminanceLiving))+(parseInt(sensorData[2].IlluminanceLiving))+(parseInt(sensorData[3].IlluminanceLiving))+(parseInt(sensorData[4].IlluminanceLiving))+(parseInt(sensorData[5].IlluminanceLiving)))/sensorData.length)+ "lux");
+  illuminance.appendChild(ill);
+}
+function showNoise() {
+  var lastValue = sensorData.length - 1;
+  var noise = document.getElementById("noiseValue");
+  var noi = document.createTextNode(parseInt(((parseInt(sensorData[0].NoiseLevelLiving))+(parseInt(sensorData[1].NoiseLevelLiving))+(parseInt(sensorData[2].NoiseLevelLiving))+(parseInt(sensorData[3].NoiseLevelLiving))+(parseInt(sensorData[4].NoiseLevelLiving))+(parseInt(sensorData[5].NoiseLevelLiving)))/sensorData.length)+ "db");
+  noise.appendChild(noi);
+}
 
 // NOTIFICATIES 
 
