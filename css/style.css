@@ -67,6 +67,26 @@
       margin: 5px;
     }
     /* INDEX */
+    /* house overview blokjes */
+    .rooms {
+      font-family: "yellow", "Lato", sans-serif;
+      display: inline-block;
+      font-size: 33px;
+    }
+    .green {
+      color: #25db91;
+    }
+    .red {
+      color: #dc485e;
+    }
+    div.icon-block {
+      display: inline-block;
+      padding-top: 15px;
+    }
+    p.rooms {
+      padding-top: 15px;
+      padding-left: 15px;
+    }
     /* outside table */
     #outside table {
       margin: 2px;
@@ -309,7 +329,7 @@
     }
     #temperature #humidity,
     .title h1 {
-      margin: 0 0 0 5%;
+      margin: 12px 0 0 20px;
       display: inline-block;
     }
     /* oranje deel */
