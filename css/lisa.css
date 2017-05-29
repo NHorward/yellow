@@ -40,3 +40,12 @@
   margin-top: 17px;
   display: block;
 }
+
+/* BACK KNOPPEN OP DETAIL PAGINA'S */
+.title a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
