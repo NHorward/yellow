@@ -5,10 +5,10 @@ var sensorData;
 // Array van data wordt toegevoegd aan var sensorData
 $(document).ready(function () {
 	$.ajax({
-		type: "get"
-		, url: "../data/data.json"
-		, dataType: "json"
-		, success: function (data) {
+		type: "get",
+		url: "../data/data.json",
+		dataType: "json",
+		success: function (data) {
 			sensorData = data.day;
 			// Bij het laden van de pagina de onderstaande functies oproepen
 			showTemperature();
@@ -33,8 +33,7 @@ function showTemperature() {
 	if (parseFloat(sensorData[lastValue].Tenvironment) > -5 && parseFloat(sensorData[lastValue].Tenvironment) < 30) {
 		$('#tempIcon').addClass('icon-thermometer');
 		$('#tempIcon').addClass('goodIcon');
-	}
-	else {
+	} else {
 		$('#tempIcon').addClass('icon-thermometer');
 		$('#tempIcon').addClass('badIcon');
 	}
@@ -49,8 +48,7 @@ function showCO2() {
 	if (parseFloat(sensorData[lastValue].CO2Environment) > 300 && parseFloat(sensorData[lastValue].CO2Environment) < 550) {
 		$('#CO2Icon').addClass('icon-cloud');
 		$('#CO2Icon').addClass('goodIcon');
-	}
-	else {
+	} else {
 		$('#CO2Icon').addClass('icon-cloud');
 		$('#CO2Icon').addClass('badIcon');
 	}
@@ -65,8 +63,7 @@ function showIlluminance() {
 	if (parseFloat(sensorData[lastValue].IlluminanceLiving) > 0 && parseFloat(sensorData[lastValue].IlluminanceLiving) < 1000) {
 		$('#illumIcon').addClass('icon-lamp');
 		$('#illumIcon').addClass('goodIcon');
-	}
-	else {
+	} else {
 		$('#illumIcon').addClass('icon-lamp');
 		$('#illumIcon').addClass('badIcon');
 	}
@@ -81,8 +78,7 @@ function showHumidity() {
 	if (parseFloat(sensorData[lastValue].RHEnvironment) > 40 && parseFloat(sensorData[lastValue].RHEnvironment) < 60) {
 		$('#humIcon').addClass('icon-water');
 		$('#humIcon').addClass('goodIcon');
-	}
-	else {
+	} else {
 		$('#humIcon').addClass('icon-water');
 		$('#humIcon').addClass('badIcon');
 	}
@@ -97,8 +93,7 @@ function showNoise() {
 	if (parseFloat(sensorData[lastValue].NoiseLevelLiving) > 0 && parseFloat(sensorData[lastValue].NoiseLevelLiving) < 80) {
 		$('#noiseIcon').addClass('icon-ear');
 		$('#noiseIcon').addClass('goodIcon');
-	}
-	else {
+	} else {
 		$('#noiseIcon').addClass('icon-ear');
 		$('#noiseIcon').addClass('badIcon');
 	}
@@ -113,8 +108,7 @@ function showPressure() {
 	if (parseFloat(sensorData[lastValue].PressureLiving) > 300 && parseFloat(sensorData[lastValue].PressureLiving) < 1400) {
 		$('#pressIcon').addClass('icon-pressure');
 		$('#pressIcon').addClass('goodIcon');
-	}
-	else {
+	} else {
 		$('#pressIcon').addClass('icon-pressure');
 		$('#pressIcon').addClass('badIcon');
 	}
@@ -126,6 +120,15 @@ function showWindSpeed() {
 	var wind = document.getElementById("windSValue");
 	var air = document.createTextNode(sensorData[lastValue].EnvironmentWS);
 	wind.appendChild(air);
+
+	if (parseFloat(sensorData[lastValue].PressureLiving) > 300 && parseFloat(sensorData[lastValue].PressureLiving) < 1400) {
+		$('#windSIcon').addClass('icon-windspeed');
+		$('#windSIcon').addClass('goodIcon');
+	} else {
+		$('#windSIcon').addClass('icon-windspeed');
+		$('#windSIcon').addClass('badIcon');
+	}
+
 }
 
 // Functie die de laatste windrichting ophaalt en weergeeft
@@ -134,6 +137,14 @@ function showWindDirection() {
 	var wind = document.getElementById("windDValue");
 	var air = document.createTextNode(sensorData[lastValue].EnvironmentWD + "°");
 	wind.appendChild(air);
+
+	if (parseFloat(sensorData[lastValue].PressureLiving) > 300 && parseFloat(sensorData[lastValue].PressureLiving) < 1400) {
+		$('#windDIcon').addClass('icon-winddirection');
+		$('#windDIcon').addClass('goodIcon');
+	} else {
+		$('#windDIcon').addClass('icon-winddirection');
+		$('#windDIcon').addClass('badIcon');
+	}
 }
 
 // NOTIFICATIES 
