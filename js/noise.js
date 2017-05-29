@@ -45,7 +45,7 @@ function showNoise() {
 function showNoiseHistory() {
 	var noiseHistoryContainer = document.getElementById("noiseHistory");
 	var historyTable = document.createElement("table");
-	for (i = 0; i < sensorData.length; i++) {
+	for (i = sensorData.length-1; i > -1; i--) {
 		var historyRow = document.createElement("tr");
 		var historyTime = document.createElement("td");
 		var time = document.createTextNode(sensorData[i].time);
