@@ -1,239 +1,254 @@
-  @media screen and (max-width: 1024px) {
-    body {
-      font-family: 'Yellow', 'lato', sans-serif;
-      font-size: 20px;
-      font-weight: 400;
-    }
-    /* navigatie */
-    header {
-      background-color: #444a6a;
-      margin: 0 auto 0 auto;
-      height: 100%;
-      width: 7.66%;
-      float: left;
-    }
-    nav ul img {
-      width: 100%;
-      height: 80px;
-      margin-bottom: 15px;
-      margin-top: 20px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: 300;
-    }
-    nav ul li {
-      text-align: center;
-    }
-    .selected {
-      color: #f47936;
-    }
-    .navLine {
-      width: 80%;
-      margin-top: 9px;
-      margin-bottom: 24px;
-    }
-    .navIcons {
-      padding-bottom: 10px;
-    }
-    /* outside Jorik */
-    #outside a {
-      text-decoration: none;
-      color: white;
-    }
-    #outside .column {
-      width: 28.69%;
-      height: 85%;
-      float: left;
-      margin-left: 1.46%
-    }
-    #outside .temperature {
-      height: 36%;
-      background-color: #444a6a;
-      margin-bottom: 15px;
-    }
-    #outside h2 {
-      text-align: center;
-      padding-top: 5px;
-      font-size: 22px;
-    }
-    #outside .co2 {
-      height: 31.5%;
-      background-color: #444a6a;
-      margin-bottom: 15px;
-    }
-    #outside .illuminance {
-      height: 28%;
-      background-color: #444a6a;
-    }
-    #outside .humidity {
-      height: 29%;
-      background-color: #444a6a;
-      margin-bottom: 15px;
-    }
-    #outside .noise {
-      height: 26%;
-      background-color: #444a6a;
-      margin-bottom: 15px;
-    }
-    #outside .pressure {
-      height: 40.5%;
-      background-color: #444a6a;
-    }
-    #outside .windSpeed {
-      height: 35%;
-      background-color: #444a6a;
-      margin-bottom: 15px;
-    }
-    #outside .windDirection {
-      height: 31%;
-      background-color: #444a6a;
-      margin-bottom: 15px;
-    }
-    #outside .voc {
-      height: 29.5%;
-      background-color: #444a6a;
-    }
-    #outside .badIcon{
-      color:#da475e;
-    }
-    #outside .goodIcon{
-      color:#57be89;
-    }
-    #outside #tempIcon{
-     font-size: 100px;
-      float: right;
-      margin-top: 30px;
-    }
-    #outside #CO2Icon{
-      font-size: 60px;
-      margin-top: 50px;
-      margin-right: 20px;
-      float: right;
-    }
-    #outside #illumIcon{
-      font-size: 70px;
-      margin-top: 40px;
-      margin-right: 20px;
-      float: right;
-    }
-    #outside #humIcon{
-      font-size: 70px;
-      margin-top: 40px;
-      margin-right: 20px;
-      float: right;
-    }
-    #outside #noiseIcon{
-      font-size: 70px;
-      margin-top: 40px;
-      margin-right: 40px;
-      float: right;
-    }
-    #outside #pressIcon{
-      font-size: 90px;
-      margin-top: 20px;
-      text-align: center;
-    }
-    
-    }
-    #outside div#tempValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 15%;
-      margin-top: 20%;
-      display: inline-block;
-    }
-    #outside div#co2Value {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 5%;
-      margin-top: 20%;
-      display: inline-block;
-    }
-    #outside div#illumValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 15%;
-      margin-top: 15%;
-      display: inline-block;
-    }
-    #outside div#humValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 15%;
-      margin-top: 15%;
-      display: inline-block;
-    }
-    #outside div#noiseValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 15%;
-      margin-top: 14%;
-      display: inline-block;
-    }
-    #outside span{
-      font-size: 28px;
-      font-weight: 300;
-    }
-    #outside div#pressValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 17%;
-      margin-top: 14%;
-      display: inline-block;
-    }
-    #outside div#windSValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 10%;
-      margin-top: 20%;
-      display: inline-block;
-    }
-    #outside div#windDValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 30%;
-      margin-top: 20%;
-    }
-    #outside div#vocValue {
-      font-size: 60px;
-      font-weight: 300;
-      margin-left: 10%;
-      margin-top: 20%;
-      display: inline-block;
-    }
-    /* login Jorik */
-    #login img {
-      display: block;
-      margin: auto;
-      margin-top: 4%;
-    }
-    #login h2 {
-      text-align: center;
-      font-size: 25px;
-      font-weight: 700;
-      margin-top: 3%;
-    }
-    #login input {
-      display: block;
-      margin: auto;
-      margin-top: 2%;
-      width: 35%;
-      height: 6%;
-    }
-    #login button {
-      background-color: #ee732a;
-      color: white;
-      width: 35%;
-      height: 6%;
-      border: none;
-      display: block;
-      margin: auto;
-      margin-top: 5%;
-    }
-    #login h3 {
-      font-weight: 400;
-      font-size: 25px;
-    }
-  }
+@media screen and (max-width: 1024px) {
+ 	body {
+ 		font-family: 'Yellow', 'lato', sans-serif;
+ 		font-size: 20px;
+ 		font-weight: 400;
+ 	}
+ 	/* navigatie */
+ 	header {
+ 		background-color: #444a6a;
+ 		margin: 0 auto 0 auto;
+ 		height: 100%;
+ 		width: 7.66%;
+ 		float: left;
+ 	}
+ 	nav ul img {
+ 		width: 100%;
+ 		height: 80px;
+ 		margin-bottom: 15px;
+ 		margin-top: 20px;
+ 	}
+ 	nav ul li a {
+ 		text-decoration: none;
+ 		color: white;
+ 		font-weight: 300;
+ 	}
+ 	nav ul li {
+ 		text-align: center;
+ 	}
+ 	.selected {
+ 		color: #f47936;
+ 	}
+ 	.navLine {
+ 		width: 80%;
+ 		margin-top: 9px;
+ 		margin-bottom: 24px;
+ 	}
+ 	.navIcons {
+ 		padding-bottom: 10px;
+ 	}
+ 	/* outside Jorik */
+ 	#outside a {
+ 		text-decoration: none;
+ 		color: white;
+ 	}
+ 	#outside .column {
+ 		width: 28.69%;
+ 		height: 85%;
+ 		float: left;
+ 		margin-left: 1.46%
+ 	}
+ 	#outside .temperature {
+ 		height: 36%;
+ 		background-color: #444a6a;
+ 		margin-bottom: 15px;
+ 	}
+ 	#outside h2 {
+ 		text-align: center;
+ 		padding-top: 5px;
+ 		font-size: 22px;
+ 	}
+ 	#outside .co2 {
+ 		height: 31.5%;
+ 		background-color: #444a6a;
+ 		margin-bottom: 15px;
+ 	}
+ 	#outside .illuminance {
+ 		height: 28%;
+ 		background-color: #444a6a;
+ 	}
+ 	#outside .humidity {
+ 		height: 29%;
+ 		background-color: #444a6a;
+ 		margin-bottom: 15px;
+ 	}
+ 	#outside .noise {
+ 		height: 26%;
+ 		background-color: #444a6a;
+ 		margin-bottom: 15px;
+ 	}
+ 	#outside .pressure {
+ 		height: 40.5%;
+ 		background-color: #444a6a;
+ 	}
+ 	#outside .windSpeed {
+ 		height: 35%;
+ 		background-color: #444a6a;
+ 		margin-bottom: 15px;
+ 	}
+ 	#outside .windDirection {
+ 		height: 31%;
+ 		background-color: #444a6a;
+ 		margin-bottom: 15px;
+ 	}
+ 	#outside .voc {
+ 		height: 29.5%;
+ 		background-color: #444a6a;
+ 	}
+ 	#outside .badIcon {
+ 		color: #da475e;
+ 	}
+ 	#outside .goodIcon {
+ 		color: #57be89;
+ 	}
+ 	#outside #tempIcon {
+ 		font-size: 100px;
+ 		float: right;
+ 		margin-top: 30px;
+ 		margin-right: 25px;
+ 	}
+ 	#outside #CO2Icon {
+ 		font-size: 60px;
+ 		margin-top: 50px;
+ 		margin-right: 20px;
+ 		float: right;
+ 	}
+ 	#outside #illumIcon {
+ 		font-size: 70px;
+ 		margin-top: 40px;
+ 		margin-right: 20px;
+ 		float: right;
+ 	}
+ 	#outside #humIcon {
+ 		font-size: 70px;
+ 		margin-top: 40px;
+ 		margin-right: 20px;
+ 		float: right;
+ 	}
+ 	#outside #noiseIcon {
+ 		font-size: 70px;
+ 		margin-top: 40px;
+ 		margin-right: 40px;
+ 		float: right;
+ 	}
+ 	#outside #pressIcon {
+ 		font-size: 90px;
+ 		margin-top: 20px;
+ 		text-align: center;
+ 	}
+ }
+ 
+ #outside div#tempValue {
+ 	font-size: 60px;
+ 	font-weight: 300;
+ 	margin-left: 15%;
+ 	margin-top: 20%;
+ 	display: inline-block;
+ }
+ 
+ #outside div#co2Value {
+ 	font-size: 60px;
+ 	font-weight: 300;
+ 	margin-left: 5%;
+ 	margin-top: 20%;
+ 	display: inline-block;
+ }
+ 
+ #outside div#illumValue {
+ 	font-size: 60px;
+ 	font-weight: 300;
+ 	margin-left: 15%;
+ 	margin-top: 15%;
+ 	display: inline-block;
+ }
+ 
+ #outside div#humValue {
+ 	font-size: 60px;
+ 	font-weight: 300;
+ 	margin-left: 15%;
+ 	margin-top: 15%;
+ 	display: inline-block;
+ }
+ 
+ #outside div#noiseValue {
+ 	font-size: 60px;
+ 	font-weight: 300;
+ 	margin-left: 15%;
+ 	margin-top: 14%;
+ 	display: inline-block;
+ }
+ 
+ #outside span {
+ 	font-size: 28px;
+ 	font-weight: 300;
+ }
+ 
+ #outside div#pressValue {
+ 	font-size: 60px;
+ 	font-weight: 300;
+ 	margin-left: 17%;
+ 	margin-top: 14%;
+ 	display: inline-block;
+ }
+ 
+ #outside div#windSValue {
+ 	font-size: 60px;
+ 	font-weight: 300;
+ 	margin-left: 10%;
+ 	margin-top: 20%;
+ 	display: inline-block;
+ }
+ 
+ #outside div#windDValue {
+ 	font-size: 60px;
+ 	font-weight: 300;
+ 	margin-left: 30%;
+ 	margin-top: 20%;
+ }
+ 
+ #outside div#vocValue {
+ 	font-size: 60px;
+ 	font-weight: 300;
+ 	margin-left: 10%;
+ 	margin-top: 20%;
+ 	display: inline-block;
+ }
+ /* login Jorik */
+ 
+ #login img {
+ 	display: block;
+ 	margin: auto;
+ 	margin-top: 4%;
+ }
+ 
+ #login h2 {
+ 	text-align: center;
+ 	font-size: 25px;
+ 	font-weight: 700;
+ 	margin-top: 3%;
+ }
+ 
+ #login input {
+ 	display: block;
+ 	margin: auto;
+ 	margin-top: 2%;
+ 	width: 35%;
+ 	height: 6%;
+ }
+ 
+ #login button {
+ 	background-color: #ee732a;
+ 	color: white;
+ 	width: 35%;
+ 	height: 6%;
+ 	border: none;
+ 	display: block;
+ 	margin: auto;
+ 	margin-top: 5%;
+ }
+ 
+ #login h3 {
+ 	font-weight: 400;
+ 	font-size: 25px;
+ }
+}
