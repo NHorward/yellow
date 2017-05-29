@@ -23,8 +23,8 @@ $(document).ready(function () {
 	});
 });
 
-// Functies die de gemiddelde waarde van de data berekenen en weergeven op de history pagina
-// Gemiddelde tempertuur berekenen en weergeven
+// Functies die de gemiddelde waarde van de sensor data berekenen en weergeven
+// Functie die de gemiddelde temperatuur berekent en laat zien
 function showTemperature() {
 	var lastValue = sensorData.length - 1;
 	var temperature = document.getElementById("tempValue");
@@ -32,7 +32,7 @@ function showTemperature() {
 	temperature.appendChild(temp);
 }
 
-// Gemiddelde luchtvochtigheid berekenen en weergeven
+// Functie die de gemiddelde luchtvochtigheid berekent en laat zien
 function showHumidity() {
 	var lastValue = sensorData.length - 1;
 	var humidity = document.getElementById("humValue");
@@ -40,7 +40,7 @@ function showHumidity() {
 	humidity.appendChild(hum);
 }
 
-// Gemiddelde CO2 waarde berekenen en weergeven
+// Functie die de gemiddelde CO2 waarde berekent en laat zien
 function showCO2() {
 	var lastValue = sensorData.length - 1;
 	var co2Value = document.getElementById("co2Value");
@@ -48,7 +48,7 @@ function showCO2() {
 	co2Value.appendChild(co2);
 }
 
-// Gemiddelde illuminantie waarde berekenen en weergeven
+// Functie die de gemiddelde illuminantie berekent en laat zien
 function showIlluminance() {
 	var lastValue = sensorData.length - 1;
 	var illuminance = document.getElementById("illValue");
@@ -56,7 +56,7 @@ function showIlluminance() {
 	illuminance.appendChild(ill);
 }
 
-// Gemiddeld geluidsniveau berekenen en weergeven
+// Functie die de gemiddelde geluidswaarde berekent en laat zien
 function showNoise() {
 	var lastValue = sensorData.length - 1;
 	var noise = document.getElementById("noiseValue");
