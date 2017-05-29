@@ -249,3 +249,62 @@ select {
 option:hover {
 	background-color: #fa7b35;
 }
+
+/* KALENDER */ 
+
+#calendar {
+	width: 276px;
+	margin: 0px;
+	margin-right: 15px;
+	float: right;
+}
+
+.ui-datepicker-inline{
+	background-color: #444a6a;
+	color: white;
+	text-decoration: none;
+	max-width: 100%;
+	font-size: 16px;
+}
+.ui-state-default{
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+td.ui-datepicker-week-end{
+	padding: 5px;
+}
+
+table.ui-datepicker-calendar{
+	margin: 15px;
+	max-width: 100%;
+}
+
+td.ui-datepicker-today{
+	padding: 5px;
+	background-color: #fa7b35 ;
+	text-align: center;
+}
+
+.ui-datepicker-current-day{
+	background-color: #fa7b35;
+}
+
+.ui-datepicker-title{
+	text-align: center;
+	padding: 15px;
+	font-size: 18px;
+}
+
+.ui-datepicker-prev{
+	text-align: left;
+	padding: 5px;
+	float: left;
+}
+
+.ui-datepicker-next{
+	text-align: right;
+	float: right;
+	padding: 5px;
+}

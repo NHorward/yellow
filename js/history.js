@@ -17,6 +17,7 @@ $(document).ready(function () {
     showCO2();
     showIlluminance()
     showNoise();
+	showCalendar();
   }
  });
 });
@@ -75,3 +76,8 @@ $("#newnotify").addClass("oldnotify");
  $("#hiddenDialog").removeClass("show");
 }
 
+// Calender Datepicker JQuery UI 
+// Bron: JQueru UI Datepicker Widget, http://api.jqueryui.com/datepicker/ Datum van raadpleging: 29 mei 2017
+function showCalendar(){
+	$("#calendar").datepicker();
+}
