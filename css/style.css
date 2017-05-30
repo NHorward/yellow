@@ -812,7 +812,7 @@
     #chartHum,
     #chartCO2,
     #chartIll,
-    chartNoise {
+    #chartNoise {
       width: 70%;
       height: 100%;
       float: left;
