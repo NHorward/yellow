@@ -357,12 +357,15 @@
     #outside td:last-child {
       padding-left: 0px;
       text-align: right;
+      border: none;
     }
     #outside tr:last-child td {
       border-bottom: 0px;
+      
     }
     #outside tr:first-child td {
       padding-top: 10px;
+      border: none;
     }
     /* OUTSIDE */
     #outside a {
@@ -629,7 +632,6 @@
     }
     #temperature #humidity,
     td {
-      border-bottom: 1px solid white;
       padding: 20px;
       font-size: 20pt;
     }
