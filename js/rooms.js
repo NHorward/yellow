@@ -7,10 +7,10 @@ var sensorData;
 // Array van data wordt toegevoegd aan var sensorData
 $(document).ready(function () {
 	$.ajax({
-		type: "get"
-		, url: "../data/data.json"
-		, dataType: "json"
-		, success: function (data) {
+		type: "get", 
+		url: "../data/data.json", 
+		dataType: "json", 
+		success: function (data) {
 			sensorData = data.day;
 			// Bij het laden van de pagina de onderstaande functies oproepen
 			changeImageLiving();

@@ -12,7 +12,7 @@ $(function () {
 		error: function (err) {
 			
 		}
-	})
+	});
 
 	function onSuccess(data) {
 		accounts = data.accounts;

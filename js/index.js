@@ -3,17 +3,16 @@
 // Globale variabelen
 var sensorData;
 var lastValue;
-// Variabelen met HTML elementen
-var roomsContainer = document.getElementById("roomsContainer");
+
 
 // Functie die JSON data ophaalt 
 // Array van data wordt toegevoegd aan var sensorData
 $(document).ready(function () {
  $.ajax({
-  type: "get"
-  , url: "data/data.json"
-  , dataType: "json"
-  , success: function (data) {
+  type: "get", 
+	 url: "data/data.json", 
+	 dataType: "json", 
+	 success: function (data) {
    sensorData = data.day;
    lastValue = sensorData.length - 1;
    // Bij het laden van de pagina de onderstaande functies oproepen
@@ -44,7 +43,7 @@ function showOutsideData() {
   var outsideRow = document.createElement("tr");
   var title = document.createElement("td");
   var titleText;
-  if (i == 0) {
+  if (i === 0) {
    titleText = document.createTextNode("Temperature");
   }
   else if (i == 1) {
@@ -56,7 +55,7 @@ function showOutsideData() {
   title.appendChild(titleText);
   var value = document.createElement("td");
   var valueData;
-  if (i == 0) {
+  if (i === 0) {
    valueData = document.createTextNode(sensorData[lastValue].Tenvironment + "°C");
   }
   else if (i == 1) {
@@ -77,7 +76,6 @@ function showOutsideData() {
 // Past livingroom blokje aan aan de huidige data 
 function changeBlockLiving() {
  var lastValue = sensorData.length - 1;
- var temperature = document.getElementById("iconLiving");
  var counter = 0;
  if (parseFloat(sensorData[lastValue].TLiving) > 17 && parseFloat(sensorData[lastValue].TLiving) < 25) {}
  else {
@@ -103,7 +101,7 @@ function changeBlockLiving() {
  else {
   counter++;
  }
- if (counter == 0) {
+ if (counter === 0) {
   $('#iconLiving').addClass('icon-block');
   $('#iconLiving').addClass('goodIcon');
  }
@@ -120,7 +118,6 @@ function changeBlockLiving() {
 // Past bedroom blokje aan aan de huidige data 
 function changeBlockBedroom() {
  var lastValue = sensorData.length - 1;
- var temperature = document.getElementById("iconBedroom1");
  var counter = 0;
  if (parseFloat(sensorData[lastValue].T1Bedroom) > 17 && parseFloat(sensorData[lastValue].T1Bedroom) < 25) {}
  else {
@@ -134,7 +131,7 @@ function changeBlockBedroom() {
  else {
   counter++;
  }
- if (counter == 0) {
+ if (counter === 0) {
   $('#iconBedroom1').addClass('icon-block');
   $('#iconBedroom1').addClass('goodIcon');
  }

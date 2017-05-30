@@ -5,7 +5,7 @@ var sensorData;
 // Array van data wordt toegevoegd aan var sensorData
 $(document).ready(function () {
 	$.ajax({
-		type: "get",
+		type: "get", 
 		url: "../data/data.json",
 		dataType: "json",
 		success: function (data) {

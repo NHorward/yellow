@@ -7,16 +7,16 @@ var sensorData;
 // Array van data wordt toegevoegd aan var sensorData
 $(document).ready(function () {
 	$.ajax({
-		type: "get"
-		, url: "../data/data.json"
-		, dataType: "json"
-		, success: function (data) {
+		type: "get",
+		url: "../data/data.json", 
+		dataType: "json", 
+		success: function (data) {
 			sensorData = data.day;
 			// Bij het laden van de pagina de onderstaande functies oproepen
 			showTemperature();
 			showHumidity();
 			showCO2();
-			showIlluminance()
+			showIlluminance();
 			showNoise();
 			showCalendar();
 		}
@@ -26,7 +26,6 @@ $(document).ready(function () {
 // Functies die de gemiddelde waarde van de sensor data berekenen en weergeven
 // Functie die de gemiddelde temperatuur berekent en laat zien
 function showTemperature() {
-	var lastValue = sensorData.length - 1;
 	var temperature = document.getElementById("tempValue");
 	var temp = document.createTextNode(parseInt(((parseInt(sensorData[0].TLiving)) + (parseInt(sensorData[1].TLiving)) + (parseInt(sensorData[2].TLiving)) + (parseInt(sensorData[3].TLiving)) + (parseInt(sensorData[4].TLiving)) + (parseInt(sensorData[5].TLiving))) / sensorData.length) + "°C");
 	temperature.appendChild(temp);
@@ -34,7 +33,6 @@ function showTemperature() {
 
 // Functie die de gemiddelde luchtvochtigheid berekent en laat zien
 function showHumidity() {
-	var lastValue = sensorData.length - 1;
 	var humidity = document.getElementById("humValue");
 	var hum = document.createTextNode(parseInt(((parseInt(sensorData[0].RHLiving)) + (parseInt(sensorData[1].RHLiving)) + (parseInt(sensorData[2].RHLiving)) + (parseInt(sensorData[3].RHLiving)) + (parseInt(sensorData[4].RHLiving)) + (parseInt(sensorData[5].RHLiving))) / sensorData.length) + "%");
 	humidity.appendChild(hum);
@@ -42,7 +40,6 @@ function showHumidity() {
 
 // Functie die de gemiddelde CO2 waarde berekent en laat zien
 function showCO2() {
-	var lastValue = sensorData.length - 1;
 	var co2Value = document.getElementById("co2Value");
 	var co2 = document.createTextNode(parseInt(((parseInt(sensorData[0].CO2Living)) + (parseInt(sensorData[1].CO2Living)) + (parseInt(sensorData[2].CO2Living)) + (parseInt(sensorData[3].CO2Living)) + (parseInt(sensorData[4].CO2Living)) + (parseInt(sensorData[5].CO2Living))) / sensorData.length) + "ppm");
 	co2Value.appendChild(co2);
@@ -50,7 +47,6 @@ function showCO2() {
 
 // Functie die de gemiddelde illuminantie berekent en laat zien
 function showIlluminance() {
-	var lastValue = sensorData.length - 1;
 	var illuminance = document.getElementById("illValue");
 	var ill = document.createTextNode(parseInt(((parseInt(sensorData[0].IlluminanceLiving)) + (parseInt(sensorData[1].IlluminanceLiving)) + (parseInt(sensorData[2].IlluminanceLiving)) + (parseInt(sensorData[3].IlluminanceLiving)) + (parseInt(sensorData[4].IlluminanceLiving)) + (parseInt(sensorData[5].IlluminanceLiving))) / sensorData.length) + "lux");
 	illuminance.appendChild(ill);
@@ -58,7 +54,6 @@ function showIlluminance() {
 
 // Functie die de gemiddelde geluidswaarde berekent en laat zien
 function showNoise() {
-	var lastValue = sensorData.length - 1;
 	var noise = document.getElementById("noiseValue");
 	var noi = document.createTextNode(parseInt(((parseInt(sensorData[0].NoiseLevelLiving)) + (parseInt(sensorData[1].NoiseLevelLiving)) + (parseInt(sensorData[2].NoiseLevelLiving)) + (parseInt(sensorData[3].NoiseLevelLiving)) + (parseInt(sensorData[4].NoiseLevelLiving)) + (parseInt(sensorData[5].NoiseLevelLiving))) / sensorData.length) + "db");
 	noise.appendChild(noi);
