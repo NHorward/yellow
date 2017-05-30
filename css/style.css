@@ -357,7 +357,6 @@
     #outside td:last-child {
       padding-left: 0px;
       text-align: right;
-      border: none;
     }
     #outside tr:last-child td {
       border-bottom: 0px;
@@ -365,7 +364,6 @@
     }
     #outside tr:first-child td {
       padding-top: 10px;
-      border: none;
     }
     /* OUTSIDE */
     #outside a {
@@ -648,6 +646,12 @@
     #temperature #humidity,
     tr:last-child td {
       border-bottom: 0px;
+    }
+    #temperature .orange td:first-child, #humidity .orange td:first-child, #noise .orange td:first-child, #illuminance .orange td:first-child, #co2 .orange td:first-child, #pressure .orange td:first-child{
+      border-bottom: 1px solid white;
+    }
+    #temperature .orange td:last-child, #humidity .orange td:last-child, #noise .orange td:last-child, #illuminance .orange td:last-child, #co2 .orange td:last-child, #pressure .orange td:last-child{
+      border-bottom: 1px solid white;
     }
     /* setpoints */
     #temperature #humidity,
