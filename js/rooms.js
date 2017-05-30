@@ -50,9 +50,11 @@ function changeImageLiving() {
 	}
 	if (counter >= 1) {
 		document.getElementById('livingroomImg').src = '../img/roomslecht.png';
+		document.getElementById('livingroomImg').alt = "The conditions are bad";
 	}
 	else {
 		document.getElementById('livingroomImg').src = '../img/roomgoed.png';
+		 document.getElementById('livingroomImg').alt = "The conditions are good";
 	}
 	
 }
@@ -75,9 +77,12 @@ function changeImageBedroom() {
 	}
 	if (counter >= 1) {
 		document.getElementById('bedroomImg').src = '../img/roomslecht.png';
+		document.getElementById('bedroomImg').alt = "The conditions are bad";
+		
 	}
 	else {
 		document.getElementById('bedroomImg').src = '../img/roomgoed.png';
+		document.getElementById('bedroomImg').alt = "The conditions are good";
 	}
 	
 }
