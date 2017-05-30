@@ -1,15 +1,15 @@
 {
-	"accounts": [{
-			"username": "ennio",
-			"password": "ennioderooms"
+  "accounts": [{
+      "username": "ennio",
+      "password": "ennioderooms"
 		},
-		{
-			"username": "bert",
-			"password": "ernie"
+    {
+      "username": "bert",
+      "password": "ernie"
 		},
-		{
-			"username": "Testpersoon2",
-			"password": "test"
+    {
+      "username": "Testpersoon2",
+      "password": "test"
 		}
 	]
 }

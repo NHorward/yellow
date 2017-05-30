@@ -2,118 +2,118 @@
   "day": [
 
     {
-      "time": "10:00"
-      , "EnvironmentWS": "30.7"
-      , "EnvironmentWD": "31"
-      , "Tenvironment": "2.5"
-      , "CO2Environment": "400"
-      , "RHEnvironment": "87.6"
-      , "TLiving": "21.6"
-      , "RHLiving": "28"
-      , "CO2Living": "417"
-      , "PressureLiving": "1023"
-      , "NoiseLevelLiving": "36"
-      , "WindowLiving": "0"
-      , "T1Bedroom": "21.8"
-      , "RHBedroom": "32.3"
-      , "CO2Bedroom": "432"
-      , "WindowBedroom": "0"
-      , "IlluminanceLiving": "400"
+      "time": "10:00",
+      "EnvironmentWS": "30.7",
+      "EnvironmentWD": "31",
+      "Tenvironment": "2.5",
+      "CO2Environment": "400",
+      "RHEnvironment": "87.6",
+      "TLiving": "21.6",
+      "RHLiving": "28",
+      "CO2Living": "417",
+      "PressureLiving": "1023",
+      "NoiseLevelLiving": "36",
+      "WindowLiving": "0",
+      "T1Bedroom": "21.8",
+      "RHBedroom": "32.3",
+      "CO2Bedroom": "432",
+      "WindowBedroom": "0",
+      "IlluminanceLiving": "400"
  }
     , {
-      "time": "11:00"
-      , "EnvironmentWS": "30.7"
-      , "EnvironmentWD": "31"
-      , "Tenvironment": "2.4"
-      , "CO2Environment": "402"
-      , "RHEnvironment": "84.7"
-      , "TLiving": "24.8"
-      , "RHLiving": "28"
-      , "CO2Living": "415"
-      , "PressureLiving": "1023"
-      , "NoiseLevelLiving": "36"
-      , "WindowLiving": "0"
-      , "T1Bedroom": "21.8"
-      , "RHBedroom": "32.2"
-      , "CO2Bedroom": "425"
-      , "WindowBedroom": "0"
-      , "IlluminanceLiving": "410"
+      "time": "11:00",
+      "EnvironmentWS": "30.7",
+      "EnvironmentWD": "31",
+      "Tenvironment": "2.4",
+      "CO2Environment": "402",
+      "RHEnvironment": "84.7",
+      "TLiving": "24.8",
+      "RHLiving": "28",
+      "CO2Living": "415",
+      "PressureLiving": "1023",
+      "NoiseLevelLiving": "36",
+      "WindowLiving": "0",
+      "T1Bedroom": "21.8",
+      "RHBedroom": "32.2",
+      "CO2Bedroom": "425",
+      "WindowBedroom": "0",
+      "IlluminanceLiving": "410"
  }
     , {
-      "time": "12:00"
-      , "EnvironmentWS": "30.7"
-      , "EnvironmentWD": "31"
-      , "Tenvironment": "2.3"
-      , "CO2Environment": "402"
-      , "RHEnvironment": "84.9"
-      , "TLiving": "21.9"
-      , "RHLiving": "27.8"
-      , "CO2Living": "409"
-      , "PressureLiving": "1022"
-      , "NoiseLevelLiving": "36"
-      , "WindowLiving": "0"
-      , "T1Bedroom": "21.9"
-      , "RHBedroom": "32.4"
-      , "CO2Bedroom": "424"
-      , "WindowBedroom": "0"
-      , "IlluminanceLiving": "400"
+      "time": "12:00",
+      "EnvironmentWS": "30.7",
+      "EnvironmentWD": "31",
+      "Tenvironment": "2.3",
+      "CO2Environment": "402",
+      "RHEnvironment": "84.9",
+      "TLiving": "21.9",
+      "RHLiving": "27.8",
+      "CO2Living": "409",
+      "PressureLiving": "1022",
+      "NoiseLevelLiving": "36",
+      "WindowLiving": "0",
+      "T1Bedroom": "21.9",
+      "RHBedroom": "32.4",
+      "CO2Bedroom": "424",
+      "WindowBedroom": "0",
+      "IlluminanceLiving": "400"
  }
     , {
-      "time": "13:00"
-      , "EnvironmentWS": "30.7"
-      , "EnvironmentWD": "31"
-      , "Tenvironment": "2.6"
-      , "CO2Environment": "409"
-      , "RHEnvironment": "85.2"
-      , "TLiving": "21.9"
-      , "RHLiving": "27.8"
-      , "CO2Living": "408"
-      , "PressureLiving": "1022"
-      , "NoiseLevelLiving": "36"
-      , "WindowLiving": "0"
-      , "T1Bedroom": "21.9"
-      , "RHBedroom": "32.5"
-      , "CO2Bedroom": "419"
-      , "WindowBedroom": "0"
-      , "IlluminanceLiving": "410"
+      "time": "13:00",
+      "EnvironmentWS": "30.7",
+      "EnvironmentWD": "31",
+      "Tenvironment": "2.6",
+      "CO2Environment": "409",
+      "RHEnvironment": "85.2",
+      "TLiving": "21.9",
+      "RHLiving": "27.8",
+      "CO2Living": "408",
+      "PressureLiving": "1022",
+      "NoiseLevelLiving": "36",
+      "WindowLiving": "0",
+      "T1Bedroom": "21.9",
+      "RHBedroom": "32.5",
+      "CO2Bedroom": "419",
+      "WindowBedroom": "0",
+      "IlluminanceLiving": "410"
  }
     , {
-      "time": "14:00"
-      , "EnvironmentWS": "30.7"
-      , "EnvironmentWD": "31"
-      , "Tenvironment": "2.7"
-      , "CO2Environment": "403"
-      , "RHEnvironment": "86.1"
-      , "TLiving": "21.9"
-      , "RHLiving": "27.8"
-      , "CO2Living": "406"
-      , "PressureLiving": "1021"
-      , "NoiseLevelLiving": "36"
-      , "WindowLiving": "0"
-      , "T1Bedroom": "21.9"
-      , "RHBedroom": "32.6"
-      , "CO2Bedroom": "419"
-      , "WindowBedroom": "0"
-      , "IlluminanceLiving": "400"
+      "time": "14:00",
+      "EnvironmentWS": "30.7",
+      "EnvironmentWD": "31",
+      "Tenvironment": "2.7",
+      "CO2Environment": "403",
+      "RHEnvironment": "86.1",
+      "TLiving": "21.9",
+      "RHLiving": "27.8",
+      "CO2Living": "406",
+      "PressureLiving": "1021",
+      "NoiseLevelLiving": "36",
+      "WindowLiving": "0",
+      "T1Bedroom": "21.9",
+      "RHBedroom": "32.6",
+      "CO2Bedroom": "419",
+      "WindowBedroom": "0",
+      "IlluminanceLiving": "400"
  }
     , {
-      "time": "15:00"
-      , "EnvironmentWS": "30.7"
-      , "EnvironmentWD": "31"
-      , "Tenvironment": "2.9"
-      , "CO2Environment": "402"
-      , "RHEnvironment": "86.9"
-      , "TLiving": "22"
-      , "RHLiving": "27.7"
-      , "CO2Living": "404"
-      , "PressureLiving": "1021"
-      , "NoiseLevelLiving": "36"
-      , "WindowLiving": "0"
-      , "T1Bedroom": "22"
-      , "RHBedroom": "32.7"
-      , "CO2Bedroom": "416"
-      , "WindowBedroom": "0"
-      , "IlluminanceLiving": "410"
+      "time": "15:00",
+      "EnvironmentWS": "30.7",
+      "EnvironmentWD": "31",
+      "Tenvironment": "2.9",
+      "CO2Environment": "402",
+      "RHEnvironment": "86.9",
+      "TLiving": "22",
+      "RHLiving": "27.7",
+      "CO2Living": "404",
+      "PressureLiving": "1021",
+      "NoiseLevelLiving": "36",
+      "WindowLiving": "0",
+      "T1Bedroom": "22",
+      "RHBedroom": "32.7",
+      "CO2Bedroom": "416",
+      "WindowBedroom": "0",
+      "IlluminanceLiving": "410"
  }
 
 ]

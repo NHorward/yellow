@@ -2,149 +2,149 @@
 <html lang="en">
 
 <head>
-	<title>Integration Mobile</title>
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="../CSS/reset.css">
-	<link rel="stylesheet" href="../fonts/font.css">
-	<link rel="stylesheet" href="../CSS/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
+  <title>Integration Mobile</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/reset.css">
+  <link rel="stylesheet" href="../fonts/font.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> </head>
 
 <body>
-	<header>
-		<nav>
-			<ul>
-				<a href="../index.html"><img src="../img/logo.png"></a>
-				<li class="navIcons">
-					<a href="../index.html" class="icon-dash"></a>
-				</li>
-				<li> <a href="../index.html">Home</a> </li>
-				<li>
-					<hr class="navLine"> </li>
-				<li class="navIcons">
-					<a href="outside.html" class="icon-leaf selected"></a>
-				</li>
-				<li><a href="outside.html" class="selected">Outside</a></li>
-				<li>
-					<hr class="navLine"> </li>
-				<li class="navIcons">
-					<a href="rooms.html" class="icon-rooms"></a>
-				</li>
-				<li><a href="rooms.html">Rooms</a></li>
-				<li>
-					<hr class="navLine"> </li>
-				<li class="navIcons">
-					<a href="history.html" class="icon-history"></a>
-				</li>
-				<li><a href="history.html">History</a></li>
-				<li>
-					<hr class="navLine"> </li>
-				<li class="navIcons">
-					<a href="profile.html" class="icon-profile"></a>
-				</li>
-				<li><a href="profile.html">Profile</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main id="outside">
-		<div class="title">
-			<h1>OUTSIDE</h1> </div>
-		<div class="notificationIcon">
-			<a href="#" class="icon-notification" onclick="showNotifications()"></a>
-			<div id="notificationContainer">
-				<div id="notificationContent" class="notificationContent">
-					<h3 class="newnotify" id="newnotify" onclick="clickedMessage()"> It's raining, time to close your windows! Hurry! </h3>
-					<div id="hiddenDialog" class="hiddenDialog" onclick="removeDialog()">
-						<h3 class="greenDialog">Done!</h3>
-						<h3 class="redDialog">No thanks! </h3></div>
-					<hr class="notLine">
-					<h3 class="oldnotify"> The rain stopped, you can open your windows again.</h3>
-					<hr class="notLine">
-					<h3 class="oldnotify"> It's too warm in the attic, maybe open the window? </h3>
-					<hr class="notLine">
-					<h3 class="oldnotify"> It's very cold in the kitchen! Turn on the heating before you become a snowman!</h3>
-					<hr class="notLine">
-					<h3 class="oldnotify"> Is there a party in the living room? There is too much noise! </h3>
-					<hr class="notLine">
-					<h3 class="oldnotify"> Open the blinds in the dining room, you aren't a vampire, are you? </h3>
-					<hr class="notLine">
-					<h3 class="oldnotify"> It's raining, time to close your windows! Hurry! </h3>
-					<hr class="notLine">
-					<h3 class="oldnotify"> The rain stopped, you can open your windows again.</h3></div>
-			</div>
-		</div>
-		<section class="column">
-			<a href="temperature.html">
-				<div class="temperature">
-					<h2>Temperature</h2>
-					<div id="tempValue"> </div>
-					<div id="tempIcon"> </div>
-				</div>
-			</a>
-			<a href="../html/co2.html">
-				<div class="co2">
-					<h2>CO2</h2>
-					<div id="co2Value"></div><span>ppm</span>
-					<div id="CO2Icon"> </div>
-				</div>
-			</a>
-			<a href="illuminance.html">
-				<div class="illuminance">
-					<h2>Illuminance</h2>
-					<div id="illumValue"> </div><span>lux</span>
-					<div id="illumIcon"> </div>
-				</div>
-			</a>
-		</section>
-		<section class="column">
-			<a href="humidity.html">
-				<div class="humidity">
-					<h2>Relative humidity</h2>
-					<div id="humValue"> </div><span>%</span>
-					<div id="humIcon"> </div>
-				</div>
-			</a>
-			<a href="noise.html">
-				<div class="noise">
-					<h2>Noise level</h2>
-					<div id="noiseValue"> </div><span>db</span>
-					<div id="noiseIcon"> </div>
-				</div>
-			</a>
-			<a href="pressure.html">
-				<div class="pressure">
-					<h2>Atmospheric pressure</h2>
-					<div id="pressValue"> </div><span>hPa</span>
-					<div id="pressIcon"> </div>
-				</div>
-			</a>
-		</section>
-		<section class="column">
-			<a href="pressure.html">
-				<div class="windSpeed">
-					<h2>Wind speed</h2>
-					<div id="windSValue"> </div><span>km/h</span>
-					<div id="windSIcon"> </div>
-				</div>
-			</a>
-			<a href="pressure.html">
-				<div class="windDirection">
-					<h2>Wind direction</h2>
-					<div id="windDValue"> </div>
-					<div id="windDIcon"> </div>
-				</div>
-			</a>
-			<a href="pressure.html">
-				<div class="voc">
-					<h2>VOC</h2>
-					<div id="vocValue"> 1024</div><span>ppm</span>
-					<div id="vocIcon" class="icon-voc goodIcon"> </div>
-				</div>
-			</a>
-		</section>
-	</main>
-	<script src="../js/jquery-3.2.1.min.js"></script>
-	<script src="../js/outside.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <a href="../index.html"><img src="../img/logo.png"></a>
+        <li class="navIcons">
+          <a href="../index.html" class="icon-dash"></a>
+        </li>
+        <li> <a href="../index.html">Home</a> </li>
+        <li>
+          <hr class="navLine"> </li>
+        <li class="navIcons">
+          <a href="outside.html" class="icon-leaf selected"></a>
+        </li>
+        <li><a href="outside.html" class="selected">Outside</a></li>
+        <li>
+          <hr class="navLine"> </li>
+        <li class="navIcons">
+          <a href="rooms.html" class="icon-rooms"></a>
+        </li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li>
+          <hr class="navLine"> </li>
+        <li class="navIcons">
+          <a href="history.html" class="icon-history"></a>
+        </li>
+        <li><a href="history.html">History</a></li>
+        <li>
+          <hr class="navLine"> </li>
+        <li class="navIcons">
+          <a href="profile.html" class="icon-profile"></a>
+        </li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="outside">
+    <div class="title">
+      <h1>OUTSIDE</h1> </div>
+    <div class="notificationIcon">
+      <a href="#" class="icon-notification" onclick="showNotifications()"></a>
+      <div id="notificationContainer">
+        <div id="notificationContent" class="notificationContent">
+          <h3 class="newnotify" id="newnotify" onclick="clickedMessage()"> It's raining, time to close your windows! Hurry! </h3>
+          <div id="hiddenDialog" class="hiddenDialog" onclick="removeDialog()">
+            <h3 class="greenDialog">Done!</h3>
+            <h3 class="redDialog">No thanks! </h3></div>
+          <hr class="notLine">
+          <h3 class="oldnotify"> The rain stopped, you can open your windows again.</h3>
+          <hr class="notLine">
+          <h3 class="oldnotify"> It's too warm in the attic, maybe open the window? </h3>
+          <hr class="notLine">
+          <h3 class="oldnotify"> It's very cold in the kitchen! Turn on the heating before you become a snowman!</h3>
+          <hr class="notLine">
+          <h3 class="oldnotify"> Is there a party in the living room? There is too much noise! </h3>
+          <hr class="notLine">
+          <h3 class="oldnotify"> Open the blinds in the dining room, you aren't a vampire, are you? </h3>
+          <hr class="notLine">
+          <h3 class="oldnotify"> It's raining, time to close your windows! Hurry! </h3>
+          <hr class="notLine">
+          <h3 class="oldnotify"> The rain stopped, you can open your windows again.</h3></div>
+      </div>
+    </div>
+    <section class="column">
+      <a href="temperature.html">
+        <div class="temperature">
+          <h2>Temperature</h2>
+          <div id="tempValue"> </div>
+          <div id="tempIcon"> </div>
+        </div>
+      </a>
+      <a href="../html/co2.html">
+        <div class="co2">
+          <h2>CO2</h2>
+          <div id="co2Value"></div><span>ppm</span>
+          <div id="CO2Icon"> </div>
+        </div>
+      </a>
+      <a href="illuminance.html">
+        <div class="illuminance">
+          <h2>Illuminance</h2>
+          <div id="illumValue"> </div><span>lux</span>
+          <div id="illumIcon"> </div>
+        </div>
+      </a>
+    </section>
+    <section class="column">
+      <a href="humidity.html">
+        <div class="humidity">
+          <h2>Relative humidity</h2>
+          <div id="humValue"> </div><span>%</span>
+          <div id="humIcon"> </div>
+        </div>
+      </a>
+      <a href="noise.html">
+        <div class="noise">
+          <h2>Noise level</h2>
+          <div id="noiseValue"> </div><span>db</span>
+          <div id="noiseIcon"> </div>
+        </div>
+      </a>
+      <a href="pressure.html">
+        <div class="pressure">
+          <h2>Atmospheric pressure</h2>
+          <div id="pressValue"> </div><span>hPa</span>
+          <div id="pressIcon"> </div>
+        </div>
+      </a>
+    </section>
+    <section class="column">
+      <a href="pressure.html">
+        <div class="windSpeed">
+          <h2>Wind speed</h2>
+          <div id="windSValue"> </div><span>km/h</span>
+          <div id="windSIcon"> </div>
+        </div>
+      </a>
+      <a href="pressure.html">
+        <div class="windDirection">
+          <h2>Wind direction</h2>
+          <div id="windDValue"> </div>
+          <div id="windDIcon"> </div>
+        </div>
+      </a>
+      <a href="pressure.html">
+        <div class="voc">
+          <h2>VOC</h2>
+          <div id="vocValue"> 1024</div><span>ppm</span>
+          <div id="vocIcon" class="icon-voc goodIcon"> </div>
+        </div>
+      </a>
+    </section>
+  </main>
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/outside.js"></script>
 </body>
 
 </html>
